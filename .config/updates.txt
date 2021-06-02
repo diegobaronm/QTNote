@@ -1,0 +1,7 @@
+This new version contains a number of updates:
+The October 2020 LaTeX update led to options being ignored when passed to a document class or a style file if the filename contained a directory.
+- The script atlaslatex_2020.sh to make adjustments to main files for TeX Live 2020.
+- The macro \ATLASLATEXPATH should no longer be necessary or be used.
+
+- May update of publications.
+- Small updates to Higgs MC snippets.

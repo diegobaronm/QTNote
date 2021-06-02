@@ -1,0 +1,177 @@
+stages:
+  - Docker
+  - Trigger
+  - Build
+
+# Buil jobs for manual and automatic
+# -------------------------------------
+
+# These jobs will trigger the docker image creation for pogitlab in the gitlab-integration project
+# automatically for the master branch and manual for the rest
+trigger-pogitlab:
+  stage: Trigger
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - curl --request POST --form "token=$CI_JOB_TOKEN" --form ref=master https://gitlab.cern.ch/api/v4/projects/19489/trigger/pipeline
+      
+# These jobs will run the docker image creation with the current version of atlaslatex
+# This happens automatically for the master branch and manual for the rest
+build_image:
+  stage: Docker
+  variables:
+    TO: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+    DOCKER_FILE: .config/Dockerfile
+  tags:
+    - docker-image-build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - echo building image
+
+# This automatically builds the INT note template and sends it to a publicly accessible space
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/mydocument.pdf?job=build_NOTE
+# This happens automatically for the master branch and manual for the rest
+build_NOTE:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - make newnote BASENAME=myExample_INT
+    - make BASENAME=myExample_INT
+  artifacts:
+    paths:
+      - myExample_INT.pdf
+    expire_in: 1 year
+
+# this automatically builds the PAPER template
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/mydocument.pdf?job=build_PAPER
+# This happens automatically for the master branch and manual for the rest
+build_PAPER:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - make newpaper BASENAME=myExample_PAPER
+    - make BASENAME=myExample_PAPER
+  artifacts:
+    paths:
+      - myExample_PAPER.pdf
+    expire_in: 1 year
+
+# this automatically builds the ATLAS LaTeX bibliography documentation
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/doc/atlas_bibtex/atlas_bibtex.pdf?job=build_bibtex
+# This happens automatically for the master branch and manual for the rest
+build_bibtex:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - cd doc/atlas_bibtex
+    - make
+  artifacts:
+    paths:
+      - doc/atlas_bibtex/atlas_bibtex.pdf
+    expire_in: 1 year
+    
+# this automatically builds the ATLAS LaTeX user documentation
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/doc/atlas_latex/atlas_latex.pdf?job=build_user
+# This happens automatically for the master branch and manual for the rest
+build_user:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - cd doc/atlas_latex
+    - make
+  artifacts:
+    paths:
+      - doc/atlas_latex/atlas_latex.pdf
+    expire_in: 1 year
+    
+# this automatically builds the ATLAS LaTeX physics macros documentation
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/doc/atlas_physics.pdf?job=build_physics
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/doc/atlas_hepphysics.pdf?job=build_physics
+# This happens automatically for the master branch and manual for the rest
+build_physics:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - cd doc/atlas_physics
+    - make atlas_physics
+    - make atlas_hepphysics
+  artifacts:
+    paths:
+      - doc/atlas_physics/atlas_physics.pdf
+      - doc/atlas_physics/atlas_hepphysics.pdf
+    expire_in: 1 year
+    
+# this automatically builds the ATLAS LaTeX tables documentation
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/doc/atlas_tables.pdf?job=build_tables
+# This happens automatically for the master branch and manual for the rest
+build_tables:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - cd doc/atlas_tables
+    - make
+  artifacts:
+    paths:
+      - doc/atlas_tables/atlas_tables.pdf
+    expire_in: 1 year
+    
+# this automatically builds the PMG MC snippets documet and sends it to a publicly accessible space
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/template/MC_snippets/MC_snippets.pdf?job=build_MCsnippet
+# This happens automatically for the master branch and manual for the rest
+build_MCsnippet:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - cd template/MC_snippets
+    - make
+  artifacts:
+    paths:
+      - template/MC_snippets/MC_snippets.pdf
+    expire_in: 1 year
+    
+# this automatically builds the exotics template and sends it to a publicly accessible space
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/template/EXOT/EXOT_template.pdf?job=build_EXOT
+# This happens automatically for the master branch and manual for the rest
+build_EXOT:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - cd template/EXOT
+    - make
+  artifacts:
+    paths:
+      - template/EXOT/EXOT_template.pdf
+    expire_in: 1 year
+    
+# this automatically builds the SUSY template and sends it to a publicly accessible space
+# https://gitlab.cern.ch/atlas-physics-office/atlaslatex/-/jobs/artifacts/master/file/template/SUSY/SUSY_template.pdf?job=build_SUSY
+# This happens automatically for the master branch and manual for the rest
+build_SUSY:
+  image: gitlab-registry.cern.ch/atlas-physics-office/gitlab-integration/texlive:2020
+  stage: Build
+  only: 
+    - master@atlas-physics-office/atlaslatex
+  script:
+    - cd template/SUSY
+    - make
+  artifacts:
+    paths:
+      - template/SUSY/SUSY_template.pdf
+    expire_in: 1 year
