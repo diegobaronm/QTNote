@@ -72,6 +72,62 @@ Conventionally, the correction or scale factors (SFs), are defined as the ratio 
 
 Therefore, an alternative approach has been taken. First, the ratio of observed signal events to predicted events in simulation for $Z\to\tauhad\taulep$ is defined as:
 \begin{equation}
-	C_{X}=\frac{\NData}{\NMC}.
+	C_{X}(Z\to\tauhad\taulep)=\frac{\NData}{\NMC}.
 \end{equation}
-Where X could be any of the tau-ID working points, 
+Where X is any of the tau-ID working points, $\NData$ is the number of $Z\to\tauhad\taulep$ events observed in the data having subtracted the background predictions and $\NMC$ are the number of simulated $\Ztt$ events with one truth-matched $\tauhad$. Next, we calculate the same ratio but for $Z\to ll$ events:
+\begin{equation}
+C(Z\to ll)=\frac{\NData}{\NMC}.
+\end{equation}
+Here, $\NData$ is the number of $Z\to ll$ events observed in data having subtracted the background predictions and $\NMC$ is the number of simulated $\Zll$ events passing all the selections.
+
+Finally, to define the SFs we take the following double ratio:
+\begin{equation}
+SF_{X}=\frac{C_{X}(Z\to\tauhad\taulep)}{C(Z\to ll)}.
+\end{equation}
+With this method we expect, at least at first order, to cancel the light lepton related uncertainties. Additionally, phenomenological uncertainties as the $Z\pt$ modelling would be reduced as well.
+\subsection{Event Selection}\label{sec3.3}
+In order to select $Z\to\tauhad\taulep$ events, our basic selection includes events with exactly one $\tauhad$ candidate and one light lepton. A muon or an electron. The $\tauhad$ and lepton pair need to have opposite charge. As we said, the presence of the lepton will be used as our tag, thus, a lepton trigger is required to be fired with an online requirement on the $p_{T}(\mu)\geq 20$ ($p_{T}(e)\geq 24$) GeV for 2015 data taking period. For 2016-2018 the online requirement is $p_{T}(\mu,e)\geq 26$ GeV. The muons are required to pass a \textit{medium} ID requirement and the electron has to pass a \textit{tight} ID filter. Additionally, both muons and electrons have to pass an offline $p_T$ requirement, it has to be greater than 27 GeV. Finally, the opening angle between the two visible objects $\Delta\phi(\tauhad,l)\leq 2\pi/3$.
+
+Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. In addition, an isolation criterion is required to be passed by the leptons: for the muon (electron), the scalar sum of the $p_T$ of the tracks within a cone of $\Delta R=0.3 (0.2)$ of the muon (electron) must be less than 0.06 times the muon (electron) $p_T$. Additionally, for the electron, the sum of the calorimeter cluster energy in a cone of size $\Delta R=0.2$ must be 0.06 times smaller than the electron $p_T$. As we said, we expect signal events to peak around $\Omega=1$, thus we select events where $\Omega\in (0,1.4)$. Fig.\ref{Fig3} shows the $\Omega$ distribution for $Z\to\tauhad\mu$ final state.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/Fig3.png}
+	\caption{Distribution of $\Omega$ for $Z\to\tauhad\mu$ final state. All the other cuts have been applied apart from the one being plotted. The ATLAS data is shown as points with error bars, showing the statistical uncertainties. The detector-level predictions are shown as the shaded histograms, with the colour code as given on the plots.The region between the vertical dashed red lines is included in the final candidate event sample. The lower section of each plot shows the ratio of data to prediction. The uncertainties on the predictions represent the MC statistical uncertainties. These uncertainties are shown as blue shaded regions.}
+	\label{Fig3}
+\end{figure}
+Additionally, a cut on the reconstructed invariant mass ($\mreco$) of the event is made. The cut aims to pick events where the invariant mass is around the Z boson mass ($70\leq\mreco\leq 110$ GeV). The invariant mass of the final states is calculated depending on the event topology. For events where $\Omega\in [0,1]$ (\textit{in-between events}),
+\begin{equation}
+\mreco^{2}=(q_l+q_{\tauhad}+q_{\nu_l}+q_{\nu_{\tauhad}})^2.
+\label{eq35}
+\end{equation}
+When the $\met$ is outside (\textit{outside events}),
+\begin{equation}
+(\mreco-5)^{2}=(q_l+q_{\tauhad}+q_\nu)^2.
+\label{eq36}
+\end{equation}
+The RHS of \eqref{eq35} and \eqref{eq36} are vector sums, where $q$ represents the four-momentum of each particle. In the outside events case we manually add 5 GeV to maintain our cuts consistent, since in this region we find empirically that the di-tau mass is underestimated and we wish to apply the same selection in both regions. Fig.\ref{Fig4} shows the distribution of $\mreco$ for the in-between and outside $Z\to\tauhad\mu$ events. 
+\begin{figure}[htbp]
+	\centering
+	\subfloat[]{\label{Fig4a}{\includegraphics[width=0.50\textwidth]{figures/Fig4a}}}\hfill
+	\subfloat[]{\label{Fig4b}{\includegraphics[width=0.50\textwidth]{figures/Fig4b}}}
+	\caption{$\mreco$ distribution for the in-between region (a) and the outside region (b). All the other cuts have been applied apart from the one being plotted.}
+	\label{Fig4}
+\end{figure}
+
+In addition, for the $Z\to\tauhad e$ final state, we add two cuts aimed to reject events where the $\tauhad$ candidate is faked by an electron. First, a requirement on the invariant mass of the electron and $\tauhad$ candidate is made, $m(e,\tauhad)<80$ GeV. Then, we also make use of an ID algorithm trained to discriminate electrons from real $\tauhad$. We require, eBDTScore$\geq 0.06$. The distributions for these variables are shown in Fig.\ref{Fig5}.
+\begin{figure}[htbp]
+	\centering
+	\subfloat[]{\label{Fig5a}{\includegraphics[width=0.50\textwidth]{figures/Fig5a}}}\hfill
+	\subfloat[]{\label{Fig5b}{\includegraphics[width=0.50\textwidth]{figures/Fig5b}}}
+	\caption{Distribution of the variables used for rejecting $\tauhad$ fakes coming from electrons. On the right $m(e,\tauhad)$ distribution (a) and on the left the eBDTScore distribution (b). All the other cuts have been applied apart from the one being plotted.}
+	\label{Fig5}
+\end{figure}
+
+Finally, in order to measure the tau ID scale factors on the high-$p_T$ region we select events where $p_T(\tauhad)\geq 45$ GeV. The $p_T$ distributions for $\tauhad$ candidates are shown in Fig.\ref{Fig6} for the in-between and outside regions.
+\begin{figure}[htbp]
+	\centering
+	\subfloat[]{\label{Fig6a}{\includegraphics[width=0.50\textwidth]{figures/Fig6a}}}\hfill
+	\subfloat[]{\label{Fig6b}{\includegraphics[width=0.50\textwidth]{figures/Fig6b}}}
+	\caption{$p_T(\tauhad)$ distribution for the in-between (a) and outside (b) regions. All the other cuts have been applied apart from the one being plotted.}
+	\label{Fig6}
+\end{figure} 

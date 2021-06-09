@@ -1,0 +1,64 @@
+In the tau reconstruction $\tauhad$ candidates are seeded from jets. Therefore, QCD events represent the main source of background (BG). Nonetheless, we do not have MC simulations for this processes. For this reason, we use a \textit{data driven method} to estimate multi-jet (MJ) BG. On the other hand, the main electroweak background (EWBG) contribution will come from $\Wjets$ production, where the light-lepton comes from the W decay and one jet fakes the $\tauhad$. In this section we will discuss how we derived our BG estimation.
+
+\subsection{Multi Jet Background}
+To obtain our multi-jet background (MJBG), we choose a variable that in principle we suppose is uncorrelated with the shape of the MJBG. For our study, this variable is the relative sign between the charges of the $\tauhad$ and the lepton. This defines two regions: the same sign (SS) region where $q(\tauhad)=q(l)$ and the opposite sign region where $q(\tauhad)=-q(l)$. Our estimate for the MJBG in the SS region is obtained by subtracting signal and electroweak backgrounds (EWBG) contributions, basically:
+\begin{equation}
+\text{MJBG}_{\text{SS}}=\text{Data}_{\text{SS}}-\text{Signal}_{\text{SS}}-\text{EWBG}_{\text{SS}},
+\end{equation}
+ To study the residual charge correlation, we define a control region (CR) where the MJ background is enhanced. The region described in Sec.\ref{sec3.3}, which contains all our final selected events is called signal region (SR). In contrast to the SR, the CR is defined by events that fail either the lepton isolation criteria or that have total number of tracks for the $\tauhad$ candidate greater than 15. The other kinematic features of the SR are maintained. A diagram showing the four regions just defined is shown in Fig.\ref{Fig7}. Now, if we assume that charge correlation is the same in the SR and CR, we have:
+ \begin{equation}
+ \frac{\text{MJBG}_{\text{SROS}}}{\text{MJBG}_{\text{SRSS}}}=\frac{\text{MJBG}_{\text{CROS}}}{\text{MJBG}_{\text{CRSS}}},
+ \end{equation}
+then,
+ \begin{equation}
+\text{MJBG}_{\text{SROS}}=\text{MJBG}_{\text{SRSS}}\times \text{RQCD}\,
+\label{eq36}
+\end{equation}
+where $\text{RQCD}\equiv\frac{\text{MJBG}_{\text{CROS}}}{\text{MJBG}_{\text{CRSS}}}$. So, \eqref{eq36} gives the estimation of MJBG on the SROS.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/Fig7.png}
+	\caption{Diagram showing the regions defined to estimate MJ background contribution in the SROS region. This data-driven method is also known as the ABCD method.}
+	\label{Fig7}
+\end{figure}
+Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background in the three candidate event samples. 
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{rrr}
+		Sample &             $\mu \tauhad$\ & $e \tauhad$\  \\
+		\toprule
+		CR OS Data &       7396    & 6255   \\
+		MC          &       6057    & 5031.9   \\ 
+		CR SS Data &       708    & 687    \\
+		MC      &       191.3      & 279.2     \\
+		\toprule
+		RQCD      &      2.591   & 2.999  \\
+		\toprule
+		SR SS     &      212    & 219   \\
+		MC     &       121.5    &  142.3   \\
+		\toprule
+		MJ Background        &      $231.1 \pm 41.8$    & $230 \pm 49.1$    \\          
+		
+		
+	\end{tabular}
+	\caption{Inputs into the calculation of the MJBG in the two final states candidate event samples  $\mu\tauhad$ and $e\tauhad$.
+		The numbers of data events in the CR OS and CR SS samples are given, together with the total numbers of events in these
+		categories expected from simulation.
+		The excess of data with respect to simulation is assumed to arise from MJBG and it is used to calculate the value of RQCD.
+		The quoted uncertainties are statistical only.
+	}
+	\label{tab:MJ}
+\end{table}
+
+\subsection{Electroweak Background}
+As we discussed previously, the main source of EWBG comes from $\Wjets$. Other sources of EWBG are $t\bar{t}$, $\Zjets$, Diboson and single top processes. For all of them, simulated samples are available and they are listed in Table \ref{Table3}. In order to check if the $\Wjets$  simulation is correctly accounting for the expected EWBG, we define a CR where there is an enhance in the number of expected $\Wjets$ events. In this region, we require our events to lay in the sidebands of the region selected in Fig.\ref{Fig3}. We also make a requirement in transverse mass of the lepton, $M_T(l)\ge 60 \GeV$. Finally, we require $n_{\text{jets}}\le 2$ to reduce $t\bar{t}$ BG. The other selections of our SR are kept.
+
+To evaluate the MJBG contribution in the $\Wjets$ CR we use the ABCD method. Our CR for MJBG is defined by the events that fail the light-lepton isolation or that have a $\tauhad$ candidate with more than 15 total tracks. The  $M_T(l)$ distribution for our $\Wjets$ events is shown in Fig.\ref{Fig8}. 
+\begin{figure}[htbp]
+	\centering
+	\subfloat[]{\label{Fig8a}{\includegraphics[width=0.50\textwidth]{figures/Fig8a}}}\hfill
+	\subfloat[]{\label{Fig8b}{\includegraphics[width=0.50\textwidth]{figures/Fig8b}}}
+	\caption{$M_T(l)$ distribution for the OS (a) and SS (b) regions. All the other cuts have been applied apart from the one being plotted. There is an excess of the data in this distribution which suggest that the simulation could be underestimating the number of $\Wjets$ events.}
+	\label{Fig8}
+\end{figure} 
+The plots show that the simulation is in average below the observed events. For this reason in this analysis we have taken a conservative approach and had scaled up our $\Wjets$ in the SR by a factor of 0.8$\pm$0.2 .
