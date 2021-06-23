@@ -39,6 +39,9 @@
 %-------------------------------------------------------------------------------
 % Style file with biblatex options for ATLAS documents.
 \usepackage{atlasbiblatex}
+\usepackage{colortbl}
+\usepackage{float}
+\restylefloat{table}
 % Commonly used options:
 %  backref=true|false    Turn on or off back references in the bibliography.
 
@@ -102,7 +105,7 @@
 % \listoftodos
 
 %-------------------------------------------------------------------------------
-\section{Introduction}
+\section{Introduction}\label{Intro}
 \label{sec:intro}
 %-------------------------------------------------------------------------------
 
@@ -110,7 +113,7 @@
 
 
 %-------------------------------------------------------------------------------
-\section{Data and MC Samples}
+\section{Data and MC Samples}\label{DataMC}
 \label{sec:samples}
 %-------------------------------------------------------------------------------
 
@@ -118,21 +121,21 @@
 
 
 %-------------------------------------------------------------------------------
-\section{Analysis Strategy}
+\section{Analysis Strategy}\label{Ana}
 \label{sec:analysis}
 %-------------------------------------------------------------------------------
 
 \input{Analysis.tex}
 
 %-------------------------------------------------------------------------------
-\section{Background Estimation}
+\section{Background Estimation}\label{BG}
 \label{sec:background}
 
 \input{BG.tex}
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
-\section{Systematic Uncertainties}
+\section{Systematic Uncertainties}\label{Sys}
 \label{sec:syst}
 %-------------------------------------------------------------------------------
 
@@ -140,11 +143,11 @@ Syst. Uncertainties here.
 
 
 %-------------------------------------------------------------------------------
-\section{Results}
+\section{Results}\label{Results}
 \label{sec:results}
 %-------------------------------------------------------------------------------
 
-Place your results here.
+\input{Results.tex}
 
 % All figures and tables should appear before the summary and conclusion.
 % The package placeins provides the macro \FloatBarrier to achieve this.
@@ -152,7 +155,7 @@ Place your results here.
 
 
 %-------------------------------------------------------------------------------
-\section{Conclusion}
+\section{Conclusion}\label{Conclusion}
 \label{sec:conclusion}
 %-------------------------------------------------------------------------------
 
