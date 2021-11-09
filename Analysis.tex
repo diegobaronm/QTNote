@@ -1,9 +1,9 @@
 This section describes the analysis methodology. We use boosted $Z\to\tauhad\taulep$ events to measure Monte Carlo correction factors for the tau identification algorithms in the high-$\pt$ region.
 
-Different working points are defined for RNN score relative to the efficiency of selecting true $\tauhad$ candidates. When the efficiency of the working points is measured in data and simulation, a correction factor has to be derived and then applied to the simulation in order for the signal efficiency to agree between data and simulation \cite{ATLAS:2017mpa}. Because of the top quark mass, $t\bar{t}$ events are usually used as a source of high momentum taus for measuring correction factors on the high-$p_T$ bins. However, Lepton universality may not hold in W decays. For that reason our study is aimed to use boosted $Z\to\tauhad\taulep$ events for deriving and cross checking the simulation correction factors in the high-$p_T$ region.   
+Different working points are defined for RNN score relative to the efficiency of selecting true $\tauhad$ candidates. When the efficiency of the working points is measured in data and simulation, a correction factor has to be derived and then applied to the simulation in order for the signal efficiency to agree between data and simulation \cite{ATLAS:2017mpa}. Because of the top quark mass, $t\bar{t}$ events are usually used as a source of high momentum taus for measuring the scale factors in the high-$p_T$ regime. However, Lepton universality may not hold in W decays. For that reason our study is aimed to use boosted $Z\to\tauhad\taulep$ events for deriving and cross checking the simulation correction factors in the high-$p_T$ region.   
 \subsection{Signal events}\label{signalevents}
-For this study, we consider as signal events where one the taus decays hadronically and the other leptonically, either into an electron or a muon. Thus, our final states will include a $\tauhad$ candidate and a lepton $l=e,\mu$. The presence of the light lepton will be used as our tag. 
-Generally, in $\Zll$ events, the taus are produced back to back and their $\pt$ spectrum falls sharply. In order to select boosted taus in the transverse plane we look for events where the opening angle in the transverse plane between the taus ($\Delta\phi(\tauhad,\taulep)$) is narrower than usual. A depiction of the topologies of our signal events is shown in Fig.\ref{Fig1}. For these events, the missing transverse momentum ($\met$) is assumed to come from the neutrinos produced in the decays of the tau leptons. Due to the fact that two neutrinos are produced in the leptonic decay mode we expect our events to have a larger $\met$ component along the $\taulep$ direction.
+For this study, we consider as signal the events where one the taus decays hadronically and the other leptonically, either into an electron or a muon. Thus, our final states will include a $\tauhad$ candidate and one light lepton $l=e,\mu$. The presence of the light lepton will be used as our tag. 
+Generally, in $\Zll$ events, the taus are produced back to back and their $\pt$ spectrum falls sharply. In order to select boosted taus, we look for events where the opening angle in the transverse plane between the taus ($\Delta\phi(\tauhad,\taulep)$) is narrower than usual. A depiction of the topologies of our signal events is shown in Fig.\ref{Fig1}. For these events, the missing transverse momentum ($\met$) is assumed to come from the neutrinos produced in the decays of the tau leptons. Due to the fact that two neutrinos are produced in the leptonic decay mode we expect our events to have a larger $\met$ component along the $\taulep$ direction.
 \begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig1a}{\includegraphics[width=0.49\textwidth]{Fig1a}}}\hfill
@@ -11,7 +11,8 @@ Generally, in $\Zll$ events, the taus are produced back to back and their $\pt$ 
 	\caption{The two different types of topologies that define the signal events. On the left, when the missing energy is between the visible objects two neutrinos are assumed to be responsible for all the missing energy. On the right, only one neutrino is assumed to be flying on the direction of the visible object closest to the missing energy.}
 	\label{Fig1}
 \end{figure}
-We classify our events in two types of topologies. First, events where the $\met$ is inside the opening angle between the visible objects. For this kind of events, we assume that the missing energy is due to a pair of neutrinos flying in the same direction as the visible objects. This is shown in Fig.\ref{Fig1a}. In this case, we solve the following equation to obtain the momentum of the neutrinos:
+
+We classify our events into two topologies. First, the events where the $\met$ is inside the opening angle between the visible objects. For this kind of events, we assume that the missing energy is due to a pair of neutrinos flying in the same direction as the visible objects. This is shown in Fig.\ref{Fig1a}. In this case, we solve the following equation to obtain the momentum of the neutrinos:
 \begin{equation}
 \vec{p}_{T_{\nu_l}}+\vec{p}_{\nu_h}=\vec{\met},
 \end{equation}
@@ -58,7 +59,7 @@ then,
 	\Omega=\omega+1.
 	\end{equation}
 \end{itemize}
-Thus, $\Omega$ is a continuous variable that give us information on the topology of the event. When $\met$ is inside the visible system it has values in the interval [0,1]. It is exactly 0 when $\met$ is in the $\tauhad$ direction and 1 when $\met$ is in the $\taulep$ direction. $\Omega$ has negative values when $\met$ is outside and closer to the $\tauhad$ candidate and has positive and values greater than 1 when is outside and closer to the $\taulep$. A diagram describing the $\Omega$ values is shown in Fig.\ref{Fig2}.
+Thus, $\Omega$ is a continuous variable that gives us information on the topology of the event. When $\met$ is inside the visible system it has values in the interval [0,1]. It is exactly 0 when $\met$ is in the $\tauhad$ direction and 1 when $\met$ is in the $\taulep$ direction. $\Omega$ has negative values when $\met$ is outside and closer to the $\tauhad$ candidate and has positive and values greater than 1 when is outside and closer to the $\taulep$. A diagram describing the $\Omega$ values is shown in Fig.\ref{Fig2}.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Fig2.png}
@@ -68,9 +69,9 @@ Thus, $\Omega$ is a continuous variable that give us information on the topology
 As we will see later, the event classification into these different types of topologies will allow us to reconstruct and exploit kinematical variables as the invariant mass of the di-tau system, the Z boson transverse momentum ($Z\pt$) and the angular distribution of the objects in the event.
 
 \subsection{Scale Factors Calculation}\label{sec3.2}
-Conventionally, the correction or scale factors (SFs), are defined as the ratio of the efficiency in data and simulation of a $\tauhad$ candidate to pass a certain level of identification. This method makes the measurement sensitive not only to the uncertainties coming from the tau reconstruction but to the light lepton trigger, reconstruction and identification. Additionally, $\POWPY$ and $\SHERPA$ simulations give different predictions for the $Z\pt$. Consequently, differences in the kinematics of the reconstructed objects also affect the measurement.
+Conventionally, the correction or scale factors (SFs), are defined as the ratio of the efficiency in data and simulation of a $\tauhad$ candidate to pass a certain level of identification. This method makes the measurement sensitive not only to the uncertainties coming from the tau calibration but to the light lepton trigger, reconstruction and identification. Additionally, $\POWPY$ and $\SHERPA$ simulations give different predictions for the $Z\pt$. Consequently, distinct MC generators will predict different kinematics for the reconstructed objects and this will affect the measurement.
 
-Therefore, an alternative approach has been taken. First, the ratio of observed signal events to predicted events in simulation for $Z\to\tauhad\taulep$ is defined as:
+For our measurement, an alternative approach has been taken. First, the ratio of observed signal events to predicted events in simulation for $Z\to\tauhad\taulep$ is defined as:
 \begin{equation}
 	C_{X}(Z\to\tauhad\taulep)=\frac{\NData}{\NMC}.
 \end{equation}
@@ -84,19 +85,19 @@ Finally, to define the SFs we take the following double ratio:
 \begin{equation}
 SF_{X}=\frac{C_{X}(Z\to\tauhad\taulep)}{C(Z\to ll)}.
 \end{equation}
-With this method we expect, at least at first order, to cancel the light lepton related uncertainties. Additionally, phenomenological uncertainties as the $Z\pt$ modelling would be reduced as well.
+With this method we expect, at least at first order, to cancel the light lepton related uncertainties. Additionally, phenomenological and luminosity uncertainties would be reduced as well.
 \subsection{Event Selection}\label{sec3.3}
 \subsubsection{$Z\to\tauhad\taulep$ Events}\label{sec3.3.1}
-In order to select $Z\to\tauhad\taulep$ events, our basic selection includes events with exactly one $\tauhad$ candidate and one light lepton. A muon or an electron. The $\tauhad$ and lepton pair need to have opposite charge. As we said, the presence of the lepton will be used as our tag, thus, a lepton trigger is required to be fired with an online requirement on the $p_{T}(\mu)\geq 20$ ($p_{T}(e)\geq 24$) GeV for 2015 data taking period. For 2016-2018 the online requirement is $p_{T}(\mu,e)\geq 26$ GeV. The muons are required to pass a \textit{medium} ID requirement and the electron has to pass a \textit{tight} ID filter. Additionally, both muons and electrons have to pass an offline $p_T$ requirement, it has to be greater than 27 GeV. Finally, the opening angle between the two visible objects $\Delta\phi(\tauhad,l)\leq 2\pi/3$.
+In order to select $Z\to\tauhad\taulep$ events, our basic selection includes events with exactly one light lepton and one or more loose $\tauhad$ candidates. The $\tauhad$ and lepton pair need to have opposite charge. As we said, the presence of the lepton will be used as our tag, thus, a lepton trigger is required to be fired with an online requirement on the $p_{T}(\mu)\geq 20$ ($p_{T}(e)\geq 24$) GeV for 2015 data taking period. For 2016-2018 the online requirement is $p_{T}(\mu,e)\geq 26$ GeV. The muon is required to pass a \textit{medium} ID requirement and the electron has to pass a \textit{tight} ID filter. Additionally, both muons and electrons have to pass an offline $p_T$ requirement, it has to be greater than 27 GeV. Finally, the opening angle between the two visible objects $\Delta\phi(\tauhad,l)\leq 1.0$ rad.
 
-Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. In addition, an isolation criterion is required to be passed by the leptons: for the muon (electron), the scalar sum of the $p_T$ of the tracks within a cone of $\Delta R=0.3 (0.2)$ of the muon (electron) must be less than 0.06 times the muon (electron) $p_T$. Additionally, for the electron, the sum of the calorimeter cluster energy in a cone of size $\Delta R=0.2$ must be 0.06 times smaller than the electron $p_T$. As we said, we expect signal events to peak around $\Omega=1$, thus we select events where $\Omega\in (0,1.4)$. Fig.\ref{Fig3} shows the $\Omega$ distribution for $Z\to\tauhad\mu$ final state.
+Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. In addition, an isolation criterion is required to be passed by the leptons: for the muon (electron), the scalar sum of the $p_T$ of the tracks within a cone of $\Delta R=0.3 (0.2)$ of the muon (electron) must be less than 0.06 times the muon (electron) $p_T$. Additionally, for the electron, the sum of the calorimeter cluster energy in a cone of size $\Delta R=0.2$ must be 0.06 times smaller than the electron $p_T$. As we said, we expect signal events to peak around $\Omega=1$, thus we select events where $\Omega\in (-0.2,1.6)$. Fig.\ref{Fig3} shows the $\Omega$ distribution for $Z\to\tauhad\mu$ final state.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/Fig3.pdf}
-	\caption{Distribution of $\Omega$ for $Z\to\tauhad\mu$ final state. All the other cuts have been applied apart from the one being plotted. The ATLAS data is shown as points with error bars, showing the statistical uncertainties. The detector-level predictions are shown as the shaded histograms, with the colour code as given on the plots.The region between the vertical dashed red lines is included in the final candidate event sample. The lower section of each plot shows the ratio of data to prediction. The uncertainties on the predictions represent the MC statistical uncertainties. These uncertainties are shown as blue shaded regions.}
+	\caption{Distribution of $\Omega$ for $Z\to\tauhad\mu$ final state. All the other cuts have been applied apart from the one being plotted. The ATLAS data is shown as points with error bars, showing the statistical uncertainties. The detector-level predictions are shown as the shaded histograms, with the colour code as given on the plots.The region between the vertical dashed red lines is included in the final event selection. The lower section of each plot shows the ratio of prediction to data. The uncertainties on the predictions represent the MC statistical uncertainties. These uncertainties are shown as the blue shaded regions.}
 	\label{Fig3}
 \end{figure}
-Additionally, a cut on the reconstructed invariant mass ($\mreco$) of the event is made. The cut aims to pick events where the invariant mass is around the Z boson mass ($70\leq\mreco\leq 110$ GeV). The invariant mass of the final states is calculated depending on the event topology. For events where $\Omega\in [0,1]$ (\textit{in-between events}),
+Additionally, a cut on the reconstructed invariant mass ($\mreco$) of the event is made. The cut aims to pick events where the invariant mass is around the Z boson mass ($60\leq\mreco\leq 120$ GeV). The invariant mass of the final states is calculated depending on the event topology. For events where $\Omega\in [0,1]$ (\textit{in-between events}),
 \begin{equation}
 \mreco^{2}=(q_l+q_{\tauhad}+q_{\nu_l}+q_{\nu_{\tauhad}})^2.
 \label{eq35}
@@ -115,7 +116,7 @@ The RHS of \eqref{eq35} and \eqref{eq36} are 4-vector sums, where $q$ represents
 	\label{Fig4}
 \end{figure}
 
-In addition, for the $Z\to\tauhad e$ final state, we add two cuts aimed to reject events where the $\tauhad$ candidate is faked by an electron. First, a requirement on the invariant mass of the electron and $\tauhad$ candidate is made, $m(e,\tauhad)<80$ GeV. Then, we also make use of an ID algorithm trained to discriminate electrons from real $\tauhad$. We require, eBDTScore$\geq 0.06$. The distributions for these variables are shown in Fig.\ref{Fig5}.
+In addition, for the $Z\to\tauhad e$ final state, we add two cuts aimed to reject events where the $\tauhad$ candidate is faked by an electron. First, a requirement on the invariant mass of the electron and $\tauhad$ candidate is applied, $m(e,\tauhad)<80$ GeV. Then, we make use of an ID algorithm trained to discriminate electrons from real $\tauhad$. We require, eBDTScore$\geq 0.05$. The distributions for these variables are shown in Fig.\ref{Fig5}.
 \begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig5a}{\includegraphics[width=0.50\textwidth]{figures/Fig5a}}}\hfill
@@ -124,7 +125,7 @@ In addition, for the $Z\to\tauhad e$ final state, we add two cuts aimed to rejec
 	\label{Fig5}
 \end{figure}
 
-Finally, in order to measure the tau ID scale factors on the high-$p_T$ region we select events where $p_T(\tauhad)\geq 45$ GeV. The $p_T$ distributions for $\tauhad$ candidates are shown in Fig.\ref{Fig6} for the in-between and outside regions.
+Finally, in order to measure the tau ID scale factors on the high-$p_T$ region we select events where $p_T(\tauhad)\geq 45$ GeV. The $p_T$ distributions for $\tauhad$ candidates are shown in Fig.\ref{Fig6} for the in-between and outside regions. A side by side comparison of the $Z\to\tauhad\mu$ and $Z\to\tauhad e$ cut distributions can be found in ADD APENDIX REFERENCE.
 \begin{figure}[htbp]
 	\centering
 	\subfloat[]{\label{Fig6a}{\includegraphics[width=0.50\textwidth]{figures/Fig6a}}}\hfill
@@ -135,20 +136,20 @@ Finally, in order to measure the tau ID scale factors on the high-$p_T$ region w
 \subsubsection{$\Zll$ Events}\label{sec3.3.2}
 As we described in Sec. \ref{sec3.2}, we will divide the simulation to data ratio in $Z\to\tauhad\taulep$ events by the same quantity but for $\Zll$ events. In this final state our basic selection includes events with exactly two same flavour, opposite charge light-leptons. The same lepton triggers are used for this final state.
 
-Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. In addition, the same isolation and identification criterion is required to be passed by the leptons. A cut in the invariant mass of the light lepton pair is applied, $80<m(l_1,l_2)<100$ GeV. The corresponding distribution is showed in Fig. \ref{Fig7s}.
+Events containing b-jets are vetoed in order to reject $t\bar{t}$ events. In addition, the same isolation and identification criterion is required to be passed by the leptons. A cut in the invariant mass of the light lepton pair is applied, $70<m(l_1,l_2)<110$ GeV. The corresponding distribution is showed in Fig. \ref{Fig7s}.
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/Fig7.pdf}
-	\caption{$m(l_1,l_2)$ distribution for the $Z\to\mu\mu$ final state. All the other cuts have been applied apart from the one being plotted. In this and all subsequent figures, the ATLAS data is shown as points with error bars, showing the statistical uncertainties. The detector-level predictions are shown as the shaded histograms, with the colour code as given on the plots. The region included in the final candidate event sample is $80<m(l_1,l_2)<100$ GeV. The lower section of each plot shows the ratio of data to prediction. The uncertainties on the predictions represent the MC statistical uncertainties. These uncertainties are shown as the blue shaded region.}
+	\caption{$m(l_1,l_2)$ distribution for the $Z\to\mu\mu$ final state. All the other cuts have been applied apart from the one being plotted. In this and all subsequent figures, the ATLAS data is shown as points with error bars, showing the statistical uncertainties. The detector-level predictions are shown as the shaded histograms, with the colour code as given on the plots. The region included in the final candidate event sample is $70<m(l_1,l_2)<11	0$ GeV. The lower section of each plot shows the ratio of prediction to real data. The uncertainties on the predictions represent the MC statistical uncertainties. These uncertainties are shown as the blue shaded region.}
 	\label{Fig7s}
 \end{figure}
 
-Since the visible products of the tau decay only carry a part of the original tau $\pt$, we need to cut harder on the light leptons produced in $\Zll$ events. Therefore, to approximately match the kinematic phase space between the $Z\to\tauhad\taulep$ and $\Zll$ events many different values for the $\Delta\phi (l_1,l_2)$ and the $\pt$ of the leptons have been explored. For the angular separation, the best match we found is to require $\Delta\phi (l_1,l_2)\leq 11\pi/18$, the $\Delta\phi (l_1,l_2)$ distribution is showed in Fig. \ref{Fig8s}. Regarding the transverse momentum, an initial offline requirement of $\pt(l_1)\geq 50$ and $\pt(l_2)\geq 47$ GeV is made. To be able to compare with the high-$\pt$ $\tauhad$ candidates a further cut of 20 GeV is applied randomly in one of the leptons. This last part is due to the fact that the light-leptons are ordered in $\pt$ and not always the hardest tau is the $\tauhad$ candidate. The resulting distribution are showed in Fig. \ref{Fig9}.
-\begin{figure}[htbp]
+Since the visible products of the tau decay only carry a part of the original tau $\pt$, we need to cut harder on the light leptons produced in $\Zll$ events. Therefore, to approximately match the kinematic phase space between the $Z\to\tauhad\taulep$ and $\Zll$ events many different values for the $\Delta\phi (l_1,l_2)$ and the $\pt$ of the leptons have been explored. For the angular separation, the best match we found is to require $\Delta\phi (l_1,l_2)\leq 1.0$ rad, the $\Delta\phi (l_1,l_2)$ distribution is showed in Fig. \ref{Fig8s}. Regarding the transverse momentum of the leptons, an initial offline requirement of $\pt(l_1)\geq 50$ and $\pt(l_2)\geq 47$ GeV is applied. To be able to match the high-$\pt$ $\tauhad$ candidates a further cut of 30 GeV is applied randomly in one of the leptons. This last part is due to the fact that the light-leptons are ordered in $\pt$ and not always the hardest tau is the $\tauhad$ candidate. The resulting distributions are showed in Fig. \ref{Fig9}.
+\begin{figure}[htbp]	
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/Fig8.pdf}
-	\caption{Distribution of $\Delta\phi (l_1,l_2)$ for the $Z\to\mu\mu$ final state. The region included in the final selection is $\Delta\phi (l_1,l_2)\leq 11/18\pi (110\deg)$.}
+	\caption{Distribution of $\Delta\phi (l_1,l_2)$ for the $Z\to\mu\mu$ final state. The region included in the final selection is $\Delta\phi (l_1,l_2)\leq 1.0$ rad.}
 	\label{Fig8s}
 \end{figure}
 \begin{figure}[htbp]
@@ -158,3 +159,5 @@ Since the visible products of the tau decay only carry a part of the original ta
 	\caption{$\pt$ distributions for $Z\to\mu\mu$ events.}
 	\label{Fig9}
 \end{figure}
+
+ADD A DISCUSSION ABOUT DIFFERENT l(pT) SELECTIONS AND THE TRUTH ZPT COMPARISONS.....	 
