@@ -6,7 +6,7 @@ To obtain the multi-jet background (MJBG), a variable that in principle is suppo
 \text{MJBG}_{\text{SS}}=\text{Data}_{\text{SS}}-\text{Signal}_{\text{SS}}-\text{EWBG}_{\text{SS}},
 \label{eq19}
 \end{equation}
- To study the residual charge correlation, we define a control region (CR) where the MJ background is enhanced. The estimate for the MJBG in these regions is given by eq. \ref{eq19} as well. The region described in Sec.\ref{sec3.3}, which contains all our final selected events is called the signal region (SR). In contrast to the SR, the CR is defined by events that fail the lepton isolation criteria and that fail the Tight-ID working point criterion for the $\tauhad$ candidate. The other kinematic features of the SR are maintained. A diagram showing the four regions just defined is shown in Fig.\ref{Fig7}. Now, if we assume that charge correlation is the same in the SR and CR, we have:
+To study the residual charge correlation, we define a control region (CR) where the MJ background is enhanced. The estimate for the MJBG in these regions is given by eq. \ref{eq19} as well. The region described in Sec.\ref{sec3.3}, which contains all our final selected events is called the signal region (SR). In contrast to the SR, the CR is defined by events that fail the lepton isolation criteria and that fail the Tight-ID working point criterion for the $\tauhad$ candidate. In this region, tau candidates are required to have a looser tau-$pt$ of 25 GeV or more. This last choice was made to increase the number of candidates in the CR. The other kinematic features of the SR are maintained. A diagram showing the four regions just defined is shown in Fig.\ref{Fig7}. Now, if we assume that charge correlation is the same in the SR and CR, we have:
  \begin{equation}
  \frac{\text{MJBG}_{\text{SR OS}}}{\text{MJBG}_{\text{SR SS}}}=\frac{\text{MJBG}_{\text{CR OS}}}{\text{MJBG}_{\text{CR SS}}},
  \end{equation}
@@ -23,31 +23,48 @@ where $\text{RQCD}\equiv\frac{\text{MJBG}_{\text{CR OS}}}{\text{MJBG}_{\text{CR 
 	\label{Fig7}
 \end{figure}
 Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background in the three candidate event samples. 
+
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{ccccc}
 			\rowcolor[HTML]{C0C0C0} 
 			\textbf{Sample} & \multicolumn{2}{c}{\cellcolor[HTML]{C0C0C0}\textbf{$\mu \tauhad$}} & \multicolumn{2}{c}{\cellcolor[HTML]{C0C0C0}\textbf{$e \tauhad$}} \\
 			& 1-prong                                  & 3-prong                                 & 1-prong                                 & 3-prong                                \\ \hline
-			CR OS Data      & 1696.0                                   & 914.0                                 & 323.0                                  & 188.0                                 \\
-			MC              & 120.865                                 & 35.63                                & 49.943                                & 19.197                                \\
-			CR SS Data      & 1394.0                                   & 647.0                                   & 307.0                                  & 111.0                                  \\
-			MC              & 30.428                                  & 4.339                                  & 21.698                                 & 2.584                                 \\ \hline
-			RQCD            & 1.155                                    & 1.367                                   & 0.957                                   & 1.557                                  \\ \hline
-			SR SS Data      & 215.0                                    & 30.0                                    & 212.0                                   & 30.0                                   \\
-			MC              & 132.227                                  & 8.06                                    & 135.354                                 & 33.774                                 \\ \hline
-			MJ Background   & 95.615                                  & 29.986                                  & 73.356                                 & 0.0                                   
+			CR OS Data      & 476.0                                   & 270.0                                 & 62.0                                  & 39.0                                 \\
+			MC              & 28.608                                 & 10.531                                & 21.058                                &              4.794                   \\
+			CR SS Data      & 366.0                                   & 151.0                                   & 56.0                                  & 28.0                                  \\
+			MC              & 3.46                                  & 0.381                                  & 1.152                                 &                    0.843              \\ \hline
+			RQCD            & 1.234                                    & 1.723                                   & 0.746                                   & 1.260                                  \\ \hline
+			SR SS Data      & 95.0                                    & 13.0                                    & 113.0                                   & 18.0                                   \\
+			MC              & 57.257                                  & 6.761                                    & 63.585                                 & 19.240                                 \\ \hline
+			MJ Background   & 46.577                                  & 10.748                                  & 36.887                                 & 0.0                                   
 		\end{tabular}%
-	\caption{Inputs for the calculation of the MJBG in the two final states, $Z\to\mu\tauhad$ and $Z\to e\tauhad$.
+	\caption{Inputs for the calculation of the central value of the MJBG yield in the two final states, $Z\to\mu\tauhad$ and $Z\to e\tauhad$.
 		The numbers of data events in the CR OS and CR SS samples are given, together with the total numbers of events in these
 		categories expected from simulation.
 		The excess of data with respect to simulation is assumed to arise from MJBG and it is used to calculate the value of RQCD.
-		The quoted uncertainties are statistical only.
 	}
 
 	\label{tab:MJ}
 }
+
+
+
+
+
 \end{table}
+
+Fig. shows the jetRNN score distributions for the events in the CRs. It can be seen that the samples are dominated by non-simulated background.
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[]{\label{Fig12a}{\includegraphics[width=0.50\textwidth]{figures/Fig12a.png}}}
+	\subfloat[]{\label{Fig12b}{\includegraphics[width=0.50\textwidth]{figures/Fig12b.png}}}\hfill
+	\subfloat[]{\label{Fig12c}{\includegraphics[width=0.50\textwidth]{figures/Fig12c.png}}}
+	\subfloat[]{\label{Fig12d}{\includegraphics[width=0.50\textwidth]{figures/Fig12d.png}}}
+	\caption{Left column (a,c) represents $Z\to\tauhad\mu$ and $Z\to\tauhad e$ is in the right column (b,d). The two figures on top show the CROS and the bottom ones represent the CRSS. All of the plots show the jetRNNScore for 1 prongs. In this case the events used to calculate RQCD are the ones with jetRNNScore$<0.4$.  }
+	\label{Fig12}
+\end{figure}
 
 \subsection{Electroweak Background}
 As we discussed previously, the main source of EWBG comes from $\Wjets$ events. Other sources of EWBG are $t\bar{t}$, $\Zjets$, Diboson and single top processes. For all of them, simulated samples are available and they are listed in Table \ref{Table3}. In order to check if the $\Wjets$  simulation is correctly accounting for the expected EWBG, we define a CR where there is an enhanced fraction of expected $\Wjets$ events. In this region, we require our events to lay in the $\Omega<0$ or $\Omega>1.4$ bands. We also make a requirement in transverse mass of the lepton, $M_T(l)\ge 60 \GeV$. Finally, we require $n_{\text{jets}}\le 2$ to reduce $t\bar{t}$ BG. The other selections of our SR are kept.
