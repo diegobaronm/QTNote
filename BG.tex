@@ -1,4 +1,4 @@
-In the tau reconstruction, $\tauhad$ candidates are seeded from jets. Therefore, QCD events represent the main source of background (BG). Nonetheless, we do not have MC simulations for this processes. For this reason, we use a \textit{data driven method} to estimate multi-jet (MJ) BG. On the other hand, the main electroweak background (EWBG) contribution will come from $\Wjets$ production, where the light-lepton comes from the W decay and one jet fakes the $\tauhad$. In this section we will discuss how we derived our BG estimation.
+In the tau reconstruction, $\tauhad$ candidates are seeded from jets. Therefore, QCD events represent the main source of background (BG). Nonetheless, we do not have MC simulations for this processes. For this reason, we use a \textit{data driven method} to estimate multi-jet (MJ). In this section we will discuss how we derived our MJBG estimation.
 
 \subsection{Multi-Jet Background}
 To obtain the multi-jet background (MJBG), a variable that in principle is supposed to be uncorrelated with the shape of the MJBG is chosen. For our study, this variable is the relative sign between the charges of the $\tauhad$ and the lepton. This defines two regions: the same sign (SS) region where $q(\tauhad)=q(l)$ and the opposite sign region where $q(\tauhad)=-q(l)$. Our estimate for the MJBG in the SS region is obtained by subtracting signal and electroweak backgrounds (EWBG) contributions:
@@ -67,14 +67,4 @@ Fig. shows the jetRNN score distributions for the events in the CRs. It can be s
 \end{figure}
 
 \subsection{Electroweak Background}
-As we discussed previously, the main source of EWBG comes from $\Wjets$ events. Other sources of EWBG are $t\bar{t}$, $\Zjets$, Diboson and single top processes. For all of them, simulated samples are available and they are listed in Table \ref{Table3}. In order to check if the $\Wjets$  simulation is correctly accounting for the expected EWBG, we define a CR where there is an enhanced fraction of expected $\Wjets$ events. In this region, we require our events to lay in the $\Omega<0$ or $\Omega>1.4$ bands. We also make a requirement in transverse mass of the lepton, $M_T(l)\ge 60 \GeV$. Finally, we require $n_{\text{jets}}\le 2$ to reduce $t\bar{t}$ BG. The other selections of our SR are kept.
-
-To evaluate the MJBG contribution in the $\Wjets$ CR we use the ABCD method. Our CR for MJBG is defined by the events that fail the light-lepton isolation or that have a $\tauhad$ candidate with more than 15 total tracks (CHANGE?). The  $M_T(l)$ distribution for our $\Wjets$ events is shown in Fig.\ref{Fig8}. 
-\begin{figure}[htbp]
-	\centering
-	\subfloat[]{\label{Fig8a}{\includegraphics[width=0.50\textwidth]{figures/Fig8a}}}\hfill
-	\subfloat[]{\label{Fig8b}{\includegraphics[width=0.50\textwidth]{figures/Fig8b}}}
-	\caption{$M_T(l)$ distribution for the OS (a) and SS (b) regions. All the other cuts have been applied apart from the one being plotted. There is an excess of the data in this distribution which suggest that the simulation could be underestimating the number of $\Wjets$ events.}
-	\label{Fig8}
-\end{figure} 
-The plots show that the simulation is in average below the observed events. For this reason, in this analysis we have taken a conservative approach and had scaled up our $\Wjets$ yields in the SR by a factor of 0.8$\pm$0.2 .
+A priori, the main electroweak background (EWBG) contribution will come from $\Wjets$ production, where the light-lepton comes from the W decay and one jet fakes the $\tauhad$. Other sources of EWBG are $t\bar{t}$, $\Zjets$, Diboson and single top processes. For all of them, simulated samples are available and they are listed in Table \ref{Table3}. At an early stage of our analysis the $\Wjets$  simulation was checked for correctly accounting for the expected EWBG. This study is described in Appendix \ref{wjetsstudy}. Nonetheless, the final $\Wjets$ contribution to our background yield is so small that an updated study will not improve the quality and precision of our results.  
