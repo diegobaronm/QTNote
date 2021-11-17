@@ -1,4 +1,6 @@
-THIS SA SECTION HAS TO BE RE-WRITTEN In this section we present the results obtained for the SFs in the $\tauhad e$ and $\tauhad \mu$ final states. For these particular samples, enriched in highly boosted $\Zll$ events, the Z$\pt$ is expected to peak at higher values than for normal back to back $\Zll$ events. Previous results \cite{Aad:2019wmn}, show that different Monte Carlo generators give different predictions for the Z$\pt$ distribution. In this analysis, we use two different MC generators for modelling the signal samples, $\POWPY[8]$ (PoPy) and $\SHERPA$. As it can be seen in Fig. \ref{Fig10}, Sherpa does a better job describing the Z boson transverse momentum for high Z$\pt$ values than PoPy. However both generators underestimate the measured value below the Z$\pt=300$ GeV region. 
+In this section we present the results obtained for the SFs in the $\tauhad e$ and $\tauhad \mu$ final states. 
+\subsection{Z-$\pt$ Study}
+Given that our particular selection of events favours highly boosted $\Zll$ events, the Z$\pt$ is expected to peak at higher values than for normal back to back $\Zll$ events. Previous results \cite{Aad:2019wmn}, have shown that different Monte Carlo generators predict different shapes for the Z$\pt$ distribution, specially in the high-$\pt$ tail. In this analysis, we used two different MC generators for modelling the signal samples, $\POWPY[8]$ (PoPy) and $\SHERPA$. As it can be seen in Fig. \ref{Fig10}, Sherpa does a better job describing the Z boson transverse momentum for high Z$\pt$ values than PoPy. However both generators underestimate the measured value below the Z$\pt=300$ GeV region. 
 
 Then, if we just measure the single ratio defined by equation \ref{eq14}, we would be sensitive to the Z$\pt$ miss-modelling. However, when taking the double ratio this effect should cancel. Additionally, the $Z\to\tauhad\taulep$ and $\Zll$ PoPy samples have been re-weighted according to the data/simulation ratio given in Fig. \ref{Fig10}. We call this samples PoPy-RW. The aim of this procedure is to show that the double ratio method is not sensitive at first order to the Z$\pt$ modelling.
 
@@ -9,7 +11,7 @@ Then, if we just measure the single ratio defined by equation \ref{eq14}, we wou
 	\label{Fig10}
 \end{figure}
 
-Fig. \ref{Fig11}, shows the Z$\pt$ distribution for our final selected events. Looking at these plots, it is clear that $\Sherpa$ does a better for highly-boosted $\Zll$ events. The total yields for all the final states, using Sherpa samples as signal, are shown in Table \ref{Tab6}. With these figures, we calculate the C factors and the SFs reported in the second column of Table \ref{Tab7} and \ref{Tab8}. The yields for the other generator configurations are in the two remaining columns.
+Fig. \ref{Fig11}, shows the Z$\pt$ distribution for our final selected events. Looking at these plots, it is clear that $\Sherpa$ does a better job for highly-boosted $\Zll$ events. 
 
 \begin{figure}[htbp]
 	\centering
@@ -18,347 +20,103 @@ Fig. \ref{Fig11}, shows the Z$\pt$ distribution for our final selected events. L
 	\caption{Z$\pt$ distributions for $Z\to\tauhad\mu$ events. $\Sherpa$ prediction (a) is much closer to the data. Meanwhile, $\POWPY[8]$ tends to underestimate the data increasingly as the Z$\pt$ becomes higher. }
 	\label{Fig11}
 \end{figure}
-
-
+\subsection{Scale Factors}
+The total yields for all the final states, using Sherpa samples as signal, are shown in Table \ref{Tab6}. With these figures, we calculate the C factors and the SFs reported in the second column of Table \ref{Tab7} and \ref{Tab8}. The SFs obtained for the other MC generator configurations are in the two remaining columns.
+\begin{table}[]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c |}
+			\hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Final State}}  & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad\mu$}}                                                              & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad\mu$}}                                                              & \cellcolor[HTML]{FFFFFF}                                     \\ \cline{1-3} \cline{5-6}
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Sample}}       & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{1-Prong}}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{3-Prong}}    & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\mu\mu$}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{1-Prong}}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{3-Prong}}    & \multirow{-2}{*}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to ee$}} \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{True Signal}}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$6083.19\pm61.147$}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1587.927\pm32.098$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$4656.503\pm58.314$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1233.426\pm27.754$} &                                                              \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Fake Signal}}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$65.163\pm5.726$}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.457\pm1.151$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$7.337\pm1.598$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.473\pm0.34$}      &                                                              \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Data}}         & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$6731\pm82.043$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1564\pm39.547$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$220337\pm469.401$}                      & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$5280\pm72.664$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1240\pm35.214$}     & $170783\pm413.259$                                           \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Signal (T+F)}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$6148.354\pm61.415$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1589.384\pm32.118$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$199195.52\pm361.578$}                   & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$4663.841\pm58.336$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1233.899\pm27.756$} & $155746.726\pm294.846$                                       \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{VV}}           & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$141.097\pm2.347$}   & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$33.667\pm1.113$}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$4669.998\pm19.439$}                     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$114.437\pm2.147$}   & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$32.386\pm1.12$}     & $3813.414\pm12.897$                                          \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{$\Wjets$}}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$17.595\pm13.611$}   & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0\pm0$}             & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0\pm0$}                                 & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0\pm0$}             & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0\pm0$}             & $8.399\pm8.399$                                              \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{$\Zjets$}}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$65.682\pm4.457$}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.115\pm0.115$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$33.153\pm8.899$}                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$23.516\pm2.641$}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.511\pm0.362$}     & $50.815\pm10.931$                                            \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{$\ttbar$}}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$52.418\pm2.695$}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$16.07\pm1.472$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$169.101\pm4.943$}                       & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$43.25\pm2.51$}      & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$13.817\pm1.423$}    & $134.426\pm4.393$                                            \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Single top}}   & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$8.466\pm0.998$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.429\pm0.414$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$23.166\pm1.741$}                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$4.56\pm0.753$}      & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$2.581\pm0.595$}     & $18.488\pm1.584$                                             \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Multi Jet}}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$46.577\pm13.825$}   & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$10.748\pm13.87$}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$36.887\pm15.695$}   & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0\pm15.695$}        &                                                              \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{RQCD}}         & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.234\pm0.081$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.723\pm0.178$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.746\pm0.208$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.26\pm0.342$}      &                                                              \\ \hline
+			\multicolumn{7}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{The uncertainty reported in this table only corresponds to the statistical component.}}                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+		\end{tabular}%
+		\caption{Yields for all the samples used in the analysis with $\Sherpa$ as signal for $\Zll$ events. The total fakes row is defined by the sum of all EW backgrounds, the MJ contribution and the fakes from the signal sample.}
+	\label{Tab6}
+}
+\end{table}
 
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|c|c|c|}
+		\begin{tabular}{|
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c 
+				>{\columncolor[HTML]{FFFFFF}}c |}
 			\hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{\textbf\{Sample/Final State\}} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad \mu$}}                         & \textbf{$Z\to\mu \mu$}              & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}$Z\to\tauhad e$}                                    & \textbf{$Z\to ee$} \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			& \textbf{1-prong}                           & \textbf{3-prong} &                         & \textbf{1-prong} & \textbf{3-prong}                           &                                     \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Data}                        & $11226\pm105.953$                                           & $2872\pm53.591$                   & $468309\pm684.331$                                   & $8258\pm90.874$                   & $2164\pm46.519$                                             & $349189\pm590.922$                  \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Signal(T+F)}                 & $10141.115\pm161.843$                                       & $2974.217\pm91.924$               & $424862.08\pm1582.183$                               & $7420.613\pm132.793$              & $2119.67\pm80.01$                                           & $318455.557\pm866.114$              \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Diboson}                     & $167.767\pm2.662$                                           & $42.741\pm1.335$                  & $7996.946\pm22.836$                                  & $130.516\pm2.394$                 & $37.799\pm1.204$                                            & $6275.035\pm17.602$                 \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{W+Jets}                      & $49.86\pm28.195$                                            & $12.663\pm13.052$                 & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}$0\pm0$} & $9.914\pm10.219$                  & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}$0\pm0$}        & $5.009\pm5.009$                     \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Z+Jets}                      & $134.893\pm5.704$                                           & $0.801\pm0.535$                   & $21.198\pm6.311$                                     & $94.44\pm4.966$                   & $2.964\pm0.878$                                             & $6.706\pm3.374$                     \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{$t\bar{t}$}                  & $78.903\pm3.311$                                            & $23.564\pm1.809$                  & $321.819\pm6.853$                                    & $51.405\pm2.73$                   & $15.462\pm1.494$                                            & $246.963\pm5.964$                   \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Single top}                  & $13.228\pm1.244$                                            & $2.584\pm0.534$                   & $53.894\pm2.687$                                     & $8.561\pm1.063$                   & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}$3.35\pm0.66$}  & $38.564\pm2.274$                    \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Multi Jet}                   & $95.615\pm34.274$                                           & $29.986\pm34.312$                 &                                                      & $73.356\pm24.249$                 & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}$0\pm24.249$}   &                                     \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{RQCD}                        & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}$1.155\pm0.04$} & $1.367\pm0.074$                   &                                                      & $0.957\pm0.103$                   & $1.557\pm0.215$                                             &                                     \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Signal Truth}                & $10018.055\pm161.144$                                       & $2971.697\pm91.912$               &                                                      & $7413.946\pm132.739$              & $2119.098\pm80.009$                                         &                                     \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Signal Fakes}                & $123.06\pm15.028$                                           & $2.521\pm1.496$                   &                                                      & $6.664\pm3.811$                   & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}$0.571\pm0.42$} &                                     \\ \hline
-			\multicolumn{4}{|c|}{Only Statistical uncertainty is reported.}                                                                                                                                                & \multicolumn{3}{c|}{$\Sherpa$ Used for signal samples.}                                                                               \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{1-Prong}}                    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{Sherpa}}               & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{PoPy-RW}}              & \textbf{PoPy}                 \\ \hline
+			\multicolumn{4}{|c|}{\cellcolor[HTML]{FFFFFF}Muons}                                                                                                                                                                                                                         \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}$C(Z\to\mu\mu)$}                     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.082\pm0.002\pm0.002=0.003$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.994\pm0.002\pm0.001=0.002$} & $1.233\pm0.003\pm0.002=0.003$ \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}$C_{\text{Tight}}(Z\to\tauhad\mu)$}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.041\pm0.014\pm0.011=0.017$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.003\pm0.013\pm0.019=0.023$} & $1.241\pm0.016\pm0.024=0.029$ \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}$SF_{\text{Tight}}(Z\to\tauhad\mu)$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.963\pm0.013\pm0.01=0.016$}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.01\pm0.013\pm0.02=0.024$}   & $1.006\pm0.013\pm0.019=0.024$ \\ \hline
+			\multicolumn{4}{|c|}{\cellcolor[HTML]{FFFFFF}Electrons}                                                                                                                                                                                                                     \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}$C(Z\to ee)$}                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.071\pm0.003\pm0.002=0.003$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.026\pm0.003\pm0.001=0.003$} & $1.275\pm0.003\pm0.002=0.004$ \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}$C_{\text{Tight}}(Z\to\tauhad e)$}   & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.085\pm0.016\pm0.014=0.021$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.043\pm0.015\pm0.023=0.028$} & $1.289\pm0.019\pm0.029=0.034$ \\ \hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}$SF_{\text{Tight}}(Z\to\tauhad e)$}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.013\pm0.015\pm0.013=0.02$}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.016\pm0.015\pm0.023=0.027$} & $1.011\pm0.015\pm0.023=0.027$ \\ \hline
+			\multicolumn{4}{|c|}{\cellcolor[HTML]{FFFFFF}Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total.}                                                                                                                                               \\ \hline
 		\end{tabular}%
-	\caption{Yields for all the samples used in the analysis with $\Sherpa$ as signal for $\Zll$ events. The total fakes row is defined by the sum of all EW backgrounds, the MJ contribution and the fakes from the signal sample.}
-	\label{Tab6}
+	 	\caption{Values obtained for the C-Factors and SFs for different generators configurations, in the case of 1-prong taus. Only the statistical uncertainty is reported. The uncorrelated uncertainties stands for the statistical fluctuations coming from the signal sample and the MJ estimation.}
+	\label{Tab7}
 	}
 \end{table}
 
- \begin{table}[H]
- 	\resizebox{\textwidth}{!}{%
- 		\begin{tabular}{|c|c|c|c|}
- 			\hline
- 			\textbf{Sample (1-prong)}						  & \textbf{Sherpa}						    & PoPy-RW                       & PoPy                          \\ \hline
- 			$p_T$ Range (GeV)                                 & \multicolumn{3}{c|}{$p_T>$70}                                                                           \\ \hline
- 			$C(Z\to\mu\mu)$                                   & $1.083\pm0.002\pm0.004=0.004$           & $0.987\pm0.001\pm0.001=0.002$ & $1.182\pm0.002\pm0.001=0.002$ \\ \hline
- 			$C(Z\to ee)$                                      & $1.076\pm0.002\pm0.003=0.003$           & $1.021\pm0.002\pm0.001=0.002$ & $1.227\pm0.002\pm0.001=0.002$ \\ \hline
- 			$p_T$ Range (GeV)                                 & \multicolumn{3}{c|}{$p_T>$45}                                                                           \\ \hline
- 			$C_{\text{Tight-ID}}(Z\to\tau\mu)$                & $1.054\pm0.011\pm0.017=0.021$           & $0.954\pm0.01\pm0.014=0.017$  & $1.126\pm0.012\pm0.016=0.02$  \\ \hline
- 			$\text{SF}_{\text{Tight-ID}}$                     & $0.974\pm0.01\pm0.016=0.019$            & $0.967\pm0.01\pm0.014=0.017$  & $0.953\pm0.01\pm0.014=0.017$  \\ \hline
- 			$C_{\text{Tight-ID}}(Z\to\tau e)$                 & $1.063\pm0.012\pm0.019=0.023$           & $0.987\pm0.011\pm0.017=0.02$  & $1.169\pm0.014\pm0.02=0.024$  \\ \hline
- 			$\text{SF}_{\text{Tight-ID}}$                     & $0.988\pm0.012\pm0.018=0.022$           & $0.952\pm0.011\pm0.018=0.021$ & $0.953\pm0.011\pm0.016=0.02$  \\ \hline
- 			\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                                        \\ \hline
- 		\end{tabular}%
- 	\caption{Values obtained for the C and SFs for different generators configurations, in the case of 1-prong taus. Only the statistical uncertainty is reported. The uncorrelated uncertainties stands for the statistical fluctuations coming from the signal sample and the MJ estimation.}
- 	\label{Tab7}
- 	}
- \end{table}
+
  
  \begin{table}[H]
  	\resizebox{\textwidth}{!}{%
- 		\begin{tabular}{|c|c|c|c|}
+ 		\begin{tabular}{|cccc|}
  			\hline
- 			\cellcolor[HTML]{FFFFFF}\textbf{Sample (3-prong)} & \cellcolor[HTML]{FFFFFF}\textbf{Sherpa} & PoPy-RW                       & PoPy                          \\ \hline
- 			$p_T$ Range (GeV)                                 & \multicolumn{3}{c|}{$p_T>$45}                                                                           \\ \hline
- 			$C_{\text{Tight-ID}}(Z\to\tau\mu)$                & $0.928\pm0.019\pm0.031=0.036$           & $0.914\pm0.018\pm0.026=0.031$ & $1.072\pm0.021\pm0.03=0.037$  \\ \hline
- 			$\text{SF}_{\text{Tight-ID}}$                     & $0.857\pm0.017\pm0.029=0.034$           & $0.927\pm0.018\pm0.026=0.032$ & $0.907\pm0.018\pm0.025=0.031$ \\ \hline
- 			$C_{\text{Tight-ID}}(Z\to\tau e)$                 & $0.993\pm0.022\pm0.039=0.045$           & $0.875\pm0.02\pm0.029=0.035$  & $1.033\pm0.023\pm0.034=0.041$ \\ \hline
- 			$\text{SF}_{\text{Tight-ID}}$                     & $0.923\pm0.02\pm0.037=0.042$            & $0.857\pm0.019\pm0.029=0.034$ & $0.841\pm0.019\pm0.028=0.034$ \\ \hline
- 			\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                                        \\ \hline
+ 			\multicolumn{1}{|c|}{3-Prong}                             & \multicolumn{1}{c|}{Sherpa}                        & \multicolumn{1}{c|}{PoPy-RW}                       & PoPy                          \\ \hline
+ 			\multicolumn{4}{|c|}{Muons}                                                                                                                                                                         \\ \hline
+ 			\multicolumn{1}{|c|}{$C_{\text{Tight}}(Z\to\tauhad\mu)$}  & \multicolumn{1}{c|}{$0.945\pm0.025\pm0.021=0.033$} & \multicolumn{1}{c|}{$0.906\pm0.024\pm0.035=0.042$} & $1.117\pm0.029\pm0.043=0.052$ \\ \hline
+ 			\multicolumn{1}{|c|}{$SF_{\text{Tight}}(Z\to\tauhad\mu)$} & \multicolumn{1}{c|}{$0.874\pm0.023\pm0.019=0.03$}  & \multicolumn{1}{c|}{$0.911\pm0.024\pm0.036=0.043$} & $0.906\pm0.024\pm0.035=0.042$ \\ \hline
+ 			\multicolumn{4}{|c|}{Electrons}                                                                                                                                                                     \\ \hline
+ 			\multicolumn{1}{|c|}{$C_{\text{Tight}}(Z\to\tauhad e)$}   & \multicolumn{1}{c|}{$0.965\pm0.029\pm0.025=0.038$} & \multicolumn{1}{c|}{$0.837\pm0.025\pm0.037=0.044$} & $1.032\pm0.031\pm0.046=0.055$ \\ \hline
+ 			\multicolumn{1}{|c|}{$SF_{\text{Tight}}(Z\to\tauhad e)$}  & \multicolumn{1}{c|}{$0.901\pm0.027\pm0.024=0.036$} & \multicolumn{1}{c|}{$0.815\pm0.024\pm0.036=0.043$} & $0.81\pm0.024\pm0.036=0.043$  \\ \hline
+ 			\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total.}                                                                                               \\ \hline
  		\end{tabular}%
  	\caption{Values obtained for the C and SFs for different generators configurations, in the case of 3-prong taus. Only the statistical uncertainty is reported. The uncorrelated uncertainties stands for the statistical fluctuations coming from the signal sample and the MJ estimation.}
  	\label{Tab8}
  	}
  \end{table}
  
-No eBDT Study 
- 
-\begin{table}[H]
+The first conclusion we can extract by looking at the last two columns of Table \ref{Tab7} and \ref{Tab7} is that the double ratio method makes this measurement safe from any Z-$\pt$ miss-modelling concern. The fact that C-Factors for PoPy-RW and PoPy samples differ by 25$\%$, but the SFs are consistent between the two MC configurations confirms our hypothesis. When comparing the muon and electron final states for 1-prongs, we see that the PoPy results agree between uncertainties and for Sherpa the agreement is at the 1.7 sigma level. For 3-prongs the situation is reverted, the Sherpa estimate agrees between uncertainties and the PoPy result has a 1.6 sigma deviation.
+
+Given that we do not see big deviations between MC generators, the results for the SFs are combined between the muon and electron final states. In this combination we assume a $\%$100 correlation regarding the systematic uncertainties. The results from the combination are given in Table \ref{Tab9}.
+\begin{table}[]
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|}
+		\begin{tabular}{|cccc|}
 			\hline
 			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Sample (1-prong)}          & \textbf{Sherpa}                & \textbf{PoPy-RW}               \\ \hline
-			& \multicolumn{2}{c|}{No eBDT + $m(e,\tau)<80$}                   \\ \hline
-			$C_{\text{Tight-ID}}(Z\to\tau e)$  & $1.045\pm0.012\pm0.019=0.022$  & $0.982\pm0.011\pm0.017=0.02$   \\ \hline
-			$\text{SF}_{\text{Tight-ID}}$      & $0.971\pm0.011\pm0.017=0.021$  & $0.962\pm0.011\pm0.016=0.02$   \\ \hline
-			\multicolumn{1}{|l|}{}             & \multicolumn{2}{c|}{No eBDT + $m(e,\tau)<75$}                   \\ \hline
-			$C_{\text{Tight-ID}}(Z\to\tau e)$  & $1.042\pm0.012\pm0.018=0.022$  & $0.981\pm0.012\pm0.017=0.021$  \\ \hline
-			$\text{SF}_{\text{Tight-ID}}$      & $0.968\pm0.012\pm0.017=0.021$  & $0.961\pm0.012\pm0.017=0.02$   \\ \hline
-			\multicolumn{3}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total} \\ \hline
+			\multicolumn{4}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Combination}}                                                                                                                                                                        \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}$SF_{\text{Tight}}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{Sherpa}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{PoPy-RW}} & \textbf{PoPy}                          \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}1-Prong}             & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.983\pm0.038$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.012\pm0.040$}  & \cellcolor[HTML]{FFFFFF}$1.08\pm0.040$ \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}3-Prong}             & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.885\pm0.047$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.864\pm0.051$}  & $0.859\pm0.051$                        \\ \hline
 		\end{tabular}%
+	\caption{Values obtained for the SFs after combining the muon and electron final states. The uncertainty represents both the systematic and statistical components.}
+	\label{Tab9}
 	}
-\end{table}
-
-\begin{table}[H]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|}
-			\hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Sample (3-prong)}          & \textbf{Sherpa}                & \textbf{PoPy-RW}               \\ \hline
-			& \multicolumn{2}{c|}{No eBDT + $m(e,\tau)<80$}                   \\ \hline
-			$C_{\text{Tight-ID}}(Z\to\tau e)$  & $0.99\pm0.022\pm0.039=0.045$   & $0.875\pm0.019\pm0.029=0.035$  \\ \hline
-			$\text{SF}_{\text{Tight-ID}}$      & $0.921\pm0.02\pm0.037=0.042$   & $0.857\pm0.019\pm0.029=0.035$  \\ \hline
-			\multicolumn{1}{|l|}{}             & \multicolumn{2}{c|}{No eBDT + $m(e,\tau)<75$}                   \\ \hline
-			$C_{\text{Tight-ID}}(Z\to\tau e)$  & $0.971\pm0.022\pm0.038=0.044$  & $0.861\pm0.02\pm0.029=0.035$   \\ \hline
-			$\text{SF}_{\text{Tight-ID}}$      & $0.902\pm0.021\pm0.035=0.041$  & $0.844\pm0.02\pm0.028=0.035$   \\ \hline
-			\multicolumn{3}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total} \\ \hline
-		\end{tabular}%
-	}
-\end{table}
+\end{table} 
 
 
 
-\begin{comment}
-\begin{table}[H]
-\resizebox{\textwidth}{!}{%
-\centering
-\begin{tabular}{|c|c|c|c|} 
-\hline
-\rowcolor[rgb]{0.753,0.753,0.753} Sample (1-prong)                  & Sherpa                                                                 & PoPy-RW                                                                & PoPy                                                                    \\ 
-\hline
-\rowcolor[rgb]{0.937,0.937,0.937} $p_T$ Range (GeV)                 & \multicolumn{3}{c|}{$p_T>$70}                                                                                                                                                                                             \\ 
-\hline
-\rowcolor[rgb]{0.604,1,0.6} $C(Z\to\mu\mu)$                         & $1.083\pm0.002\pm0.004=0.004$ & $0.987\pm0.001\pm0.001=0.002$ & $1.182\pm0.002\pm0.001=0.002$  \\ 
-\hline
-\rowcolor[rgb]{0.604,1,0.6} $C(Z\to ee)$                            & $1.076\pm0.002\pm0.003=0.003$ & $1.021\pm0.002\pm0.001=0.002$ & $1.227\pm0.002\pm0.001=0.002$  \\ 
-\hline
-\rowcolor[rgb]{0.937,0.937,0.937} $p_T$ Range (GeV)                 & \multicolumn{3}{c|}{$p_T>$45}                                                                                                                                                                                             \\ 
-\hline
-\rowcolor[rgb]{0.588,1,0.984} $C_{\text{Tight-ID}}(Z\to\tau\mu)$    & $1.044\pm0.011\pm0.018=0.021$ & $0.947\pm0.01\pm0.014=0.017$  & $1.11\pm0.012\pm0.017=0.02$    \\ 
-\hline
-\rowcolor[rgb]{0.588,1,0.984} $\text{SF}_{\text{Tight-ID}}$                          & $0.964\pm0.01\pm0.017=0.02$   & $0.959\pm0.01\pm0.014=0.017$  & $0.939\pm0.01\pm0.014=0.017$   \\ 
-\hline
-\rowcolor[rgb]{0.992,0.408,0.392} $C_{\text{Tight-ID}}(Z\to\tau e)$ & $1.041\pm0.012\pm0.021=0.025$ & $0.971\pm0.011\pm0.018=0.022$ & $1.138\pm0.014\pm0.023=0.027$  \\ 
-\hline
-\rowcolor[rgb]{0.992,0.408,0.392} $\text{SF}_{\text{Tight-ID}}$                      & $0.968\pm0.012\pm0.02=0.023$  & $0.952\pm0.011\pm0.018=0.021$ & $0.927\pm0.011\pm0.019=0.022$  \\ 
-\hline
-\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                                                                                                                                                                            \\
-\hline
-\end{tabular}
-}
-\end{table}
-
-
-SFs 3-prong.
-
-
-\begin{table}[H]
-	\resizebox{\textwidth}{!}{%
-		\centering
-		\begin{tabular}{|c|c|c|c|} 
-			\hline
-			\rowcolor[rgb]{0.753,0.753,0.753} Sample (3-prong)                  & Sherpa                                                                 & PoPy-RW                                                                & PoPy                                                                    \\ 
-			\hline
-			\rowcolor[rgb]{0.937,0.937,0.937} $p_T$ Range (GeV)                 & \multicolumn{3}{c|}{$p_T>$45}                                                                                                                                                                                             \\ 
-			\hline
-			\rowcolor[rgb]{0.588,1,0.984} $C_{\text{Tight-ID}}(Z\to\tau\mu)$    & $0.924\pm0.019\pm0.038=0.042$ & $0.912\pm0.018\pm0.029=0.034$ & $1.065\pm0.021\pm0.036=0.041$  \\ 
-			\hline
-			\rowcolor[rgb]{0.588,1,0.984} $\text{SF}_{\text{Tight-ID}}$                          & $0.854\pm0.017\pm0.035=0.039$ & $0.925\pm0.018\pm0.029=0.034$ & $0.901\pm0.018\pm0.03=0.035$   \\ 
-			\hline
-			\rowcolor[rgb]{0.992,0.408,0.392} $C_{\text{Tight-ID}}(Z\to\tau e)$ & $0.993\pm0.022\pm0.052=0.057$ & $0.872\pm0.02\pm0.039=0.044$  & $1.02\pm0.023\pm0.052=0.057$   \\ 
-			\hline
-			\rowcolor[rgb]{0.992,0.408,0.392} $\text{SF}_{\text{Tight-ID}}$                      & $0.923\pm0.02\pm0.049=0.053$  & $0.855\pm0.019\pm0.038=0.043$ & $0.831\pm0.019\pm0.043=0.047$  \\ 
-			\hline
-			\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                                                                                                                                                                            \\
-			\hline
-		\end{tabular}
-	}
-\end{table}
-
-NO eBDTs
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|c|c|c|} 
-		\hline
-		\rowcolor[rgb]{0.753,0.753,0.753} Sample (1-prong)                  & Sherpa                                                        & PoPy-RW                                                        \\ 
-		\hline
-		\rowcolor[rgb]{0.937,0.937,0.937}                                   & \multicolumn{2}{c|}{No eBDT + $m(e,\tau)<80$}                                                                  \\ 
-		\hline
-		\rowcolor[rgb]{0.588,1,0.984} $C_{\text{Tight-ID}}(Z\to\tau e)$     & $1.002\pm0.012\pm0.024=0.027$ & $0.953\pm0.011\pm0.021=0.024$  \\ 
-		\hline
-		\rowcolor[rgb]{0.588,1,0.984} $\text{SF}_{\text{Tight-ID}}$                          & $0.932\pm0.011\pm0.022=0.025$ & $0.934\pm0.011\pm0.021=0.024$  \\ 
-		\hline
-		\multicolumn{1}{|l|}{}                                              & \multicolumn{2}{c|}{No eBDT + $m(e,\tau)<75$}                                                                  \\ 
-		\hline
-		\rowcolor[rgb]{0.992,0.408,0.392} $C_{\text{Tight-ID}}(Z\to\tau e)$ & $0.992\pm0.012\pm0.022=0.025$ & $0.944\pm0.012\pm0.02=0.023$   \\ 
-		\hline
-		\rowcolor[rgb]{0.992,0.408,0.392} $\text{SF}_{\text{Tight-ID}}$                      & $0.922\pm0.012\pm0.02=0.023$  & $0.925\pm0.012\pm0.02=0.023$   \\ 
-		\hline
-		\multicolumn{3}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                                                                                 \\
-		\hline
-	\end{tabular}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|c|c|c|} 
-		\hline
-		\rowcolor[rgb]{0.753,0.753,0.753} Sample (3-prong)                  & Sherpa                                                        & PoPy-RW                                                        \\ 
-		\hline
-		\rowcolor[rgb]{0.937,0.937,0.937}                                   & \multicolumn{2}{c|}{No eBDT + $m(e,\tau)<80$}                                                                                  \\ 
-		\hline
-		\rowcolor[rgb]{0.588,1,0.984} $C_{\text{Tight-ID}}(Z\to\tau e)$     & $0.99\pm0.022\pm0.068=0.072$  & $0.872\pm0.019\pm0.056=0.059$  \\ 
-		\hline
-		\rowcolor[rgb]{0.588,1,0.984} $\text{SF}_{\text{Tight-ID}}$                          & $0.921\pm0.02\pm0.064=0.067$  & $0.855\pm0.019\pm0.054=0.058$  \\ 
-		\hline
-		\multicolumn{1}{|l|}{}                                              & \multicolumn{2}{c|}{No eBDT + $m(e,\tau)<75$}                                                                                  \\ 
-		\hline
-		\rowcolor[rgb]{0.992,0.408,0.392} $C_{\text{Tight-ID}}(Z\to\tau e)$ & $0.971\pm0.022\pm0.06=0.064$  & $0.858\pm0.02\pm0.049=0.053$   \\ 
-		\hline
-		\rowcolor[rgb]{0.992,0.408,0.392} $\text{SF}_{\text{Tight-ID}}$                      & $0.902\pm0.021\pm0.056=0.059$ & $0.841\pm0.02\pm0.048=0.052$   \\ 
-		\hline
-		\multicolumn{3}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                                                                                 \\
-		\hline
-	\end{tabular}
-\end{table}
-
-PoPy Yields
-
-\begin{table}[H]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|c|c|c|}
-			\hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Sample/Final State} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad \mu$}} & \textbf{$Z\to\mu \mu$}        & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad e$}} & \textbf{$Z\to ee$}            \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			& \textbf{1-prong}                   & \textbf{3-prong}                   & \textbf{}                     & \textbf{1-prong}                  & \textbf{3-prong}                  &                               \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Data}               & $11226\pm105.953$                  & $2872\pm53.591$                    & $468309\pm684.331$            & $8258\pm90.874$                   & $2164\pm46.519$                   & $349189\pm590.922$            \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Signal(T+F)}        & $9463.807\pm132.039$               & $2592.277\pm68.734$                & $389244.279\pm320.997$        & $6735.205\pm112.939$              & $2016.842\pm61.737$               & $279172.354\pm258.624$        \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Diboson}            & $167.767\pm2.662$                  & $42.741\pm1.335$                   & $7996.946\pm22.836$           & $130.516\pm2.394$                 & $37.799\pm1.204$                  & $6275.035\pm17.602$           \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{W+Jets}             & $49.86\pm28.195$                   & $12.663\pm13.052$                  & $0\pm0$                       & $9.914\pm10.219$                  & $0\pm0$                           & $5.009\pm5.009$               \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Z+Jets}             & $134.893\pm5.704$                  & $0.801\pm0.535$                    & $21.198\pm6.311$              & $94.44\pm4.966$                   & $2.964\pm0.878$                   & $6.706\pm3.374$               \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{$t\bar{t}$}         & $78.903\pm3.311$                   & $23.564\pm1.809$                   & $321.819\pm6.853$             & $51.405\pm2.73$                   & $15.462\pm1.494$                  & $246.963\pm5.964$             \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Single top}         & $13.228\pm1.244$                   & $2.584\pm0.534$                    & $53.894\pm2.687$              & $8.561\pm1.063$                   & $3.35\pm0.66$                     & $38.564\pm2.274$              \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Multi Jet}          & $290.142\pm55.655$                 & $29.311\pm55.823$                  &                               & $297.579\pm83.711$                & $46.753\pm84.392$                 &                               \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{RQCD}               & $2.557\pm0.154$                    & $3.325\pm0.49$                     &                               & $3.354\pm0.26$                    & $3.626\pm0.83$                    &                               \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Signal Truth}       & $9375.435\pm131.447$               & $2592.277\pm68.734$                &                               & $6728.238\pm112.885$              & $2016.842\pm61.737$               &                               \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{Signal Fakes}       & $88.372\pm12.482$                  & $0\pm0$                            &                               & $6.967\pm3.503$                   & $0\pm0$                           &                               \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{C Factor}           & $1.11\pm0.012\pm0.017=0.02$        & $1.065\pm0.021\pm0.036=0.041$      & $1.182\pm0.002\pm0.001=0.002$ & $1.138\pm0.014\pm0.023=0.027$     & $1.02\pm0.023\pm0.052=0.057$      & $1.227\pm0.002\pm0.001=0.002$ \\ \hline
-			\rowcolor[HTML]{FFFFFF} 
-			\textbf{SF Factor}          & $0.939\pm0.01\pm0.014=0.017$       & $0.901\pm0.018\pm0.03=0.035$       &                               & $0.927\pm0.011\pm0.019=0.022$     & $0.831\pm0.019\pm0.043=0.047$     &                               \\ \hline
-			\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                  & \multicolumn{3}{c|}{PowHeg+Pythia8 Used for signal samples.}                                          \\ \hline
-		\end{tabular}%
-		\caption{Systematic uncertainties used in this study. At the time of writing this report we have not directly estimated all of our systematic uncertainties. However, we expect that some of them will get reduced by the double ratio method.}
-		\label{Tab4}
-	}
-\end{table}
-
-Low-$\pt$ study
-
-\begin{table}[H]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			\rowcolor[HTML]{C0C0C0} 
-			\textbf{Sample (1-prong)}                         & \textbf{Sherpa}               & \textbf{PoPy-RW}              & \textbf{PoPy}                 \\ \hline
-			\rowcolor[HTML]{C0C0C0} 
-			\textbf{$p_T$ Range}                              & \multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{$p_T<45$ GeV\}}}                          \\ \hline
-			\rowcolor[HTML]{67FD9A} 
-			\textbf{$C(Z    \to\mu\mu)$}                      & $1.076\pm0.001\pm0.003=0.003$ & $0.996\pm0.001\pm0.001=0.001$ & $1.109\pm0.001\pm0.001=0.002$ \\ \hline
-			\rowcolor[HTML]{67FD9A} 
-			\textbf{$C(Z    \to ee)$}                         & $1.073\pm0.002\pm0.004=0.004$ & $1.017\pm0.002\pm0.001=0.002$ & $1.136\pm0.002\pm0.001=0.002$ \\ \hline
-			\rowcolor[HTML]{34CDF9} 
-			\textbf{$C_{\text{Tight-ID}}(Z\to\tau\mu)$}       & $1.002\pm0.013\pm0.023=0.027$ & $0.926\pm0.012\pm0.014=0.019$ & $1.016\pm0.014\pm0.017=0.021$ \\ \hline
-			\rowcolor[HTML]{34CDF9} 
-			\textbf{$\text{SF}_{\text{Tight-ID}}$} & $0.931\pm0.012\pm0.022=0.025$ & $0.93\pm0.012\pm0.014=0.019$  & $0.916\pm0.012\pm0.015=0.019$ \\ \hline
-			\rowcolor[HTML]{FD6864} 
-			\textbf{$C_{\text{Tight-ID}}(Z\to\tau e)$}        & $0.993\pm0.013\pm0.032=0.035$ & $0.895\pm0.012\pm0.02=0.023$  & $0.971\pm0.013\pm0.024=0.028$ \\ \hline
-			\rowcolor[HTML]{FD6864} 
-			\textbf{$\text{SF}_{\text{Tight-ID}}$} & $0.925\pm0.013\pm0.03=0.033$  & $0.88\pm0.012\pm0.02=0.023$   & $0.855\pm0.012\pm0.021=0.024$ \\ \hline
-		\end{tabular}%
-	}
-\end{table}
-
-\begin{table}[H]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			\rowcolor[HTML]{C0C0C0} 
-			\textbf{Sample (3-prong)}                         & \textbf{Sherpa}               & \textbf{PoPy-RW}              & \textbf{PoPy}                 \\ \hline
-			\rowcolor[HTML]{C0C0C0} 
-			\textbf{$p_T$ Range}                              & \multicolumn{3}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{$p_T<45$ GeV\}}}                          \\ \hline
-			\rowcolor[HTML]{34CDF9} 
-			\textbf{$C_{\text{Tight-ID}}(Z\to\tau\mu)$}       & $0.976\pm0.016\pm0.075=0.077$ & $0.886\pm0.015\pm0.052=0.054$ & $0.96\pm0.017\pm0.062=0.065$  \\ \hline
-			\rowcolor[HTML]{34CDF9} 
-			\textbf{$\text{SF}_{\text{Tight-ID}}$} & $0.908\pm0.015\pm0.07=0.072$  & $0.89\pm0.016\pm0.052=0.054$  & $0.866\pm0.015\pm0.056=0.058$ \\ \hline
-			\rowcolor[HTML]{FD6864} 
-			\textbf{$C_{\text{Tight-ID}}(Z\to\tau e)$}        & $0.917\pm0.019\pm0.108=0.11$  & $0.887\pm0.018\pm0.08=0.082$  & $0.951\pm0.02\pm0.098=0.1$    \\ \hline
-			\rowcolor[HTML]{FD6864} 
-			\textbf{$\text{SF}_{\text{Tight-ID}}$} & $0.854\pm0.018\pm0.101=0.102$ & $0.872\pm0.017\pm0.079=0.081$ & $0.837\pm0.017\pm0.086=0.088$ \\ \hline
-		\end{tabular}%
-	}
-\end{table}
-
-Anti-ID RNN Control Region Def
-
-\begin{table}[H]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			\textbf{Sample (1-prong)}						  & \textbf{Sherpa}						    & PoPy-RW                       & PoPy                          \\ \hline
-			$p_T$ Range (GeV)                                 & \multicolumn{3}{c|}{$p_T>$70}                                                                           \\ \hline
-			$C(Z\to\mu\mu)$                                   & $1.083\pm0.002\pm0.004=0.004$           & $0.987\pm0.001\pm0.001=0.002$ & $1.182\pm0.002\pm0.001=0.002$ \\ \hline
-			$C(Z\to ee)$                                      & $1.076\pm0.002\pm0.003=0.003$           & $1.021\pm0.002\pm0.001=0.002$ & $1.227\pm0.002\pm0.001=0.002$ \\ \hline
-			$p_T$ Range (GeV)                                 & \multicolumn{3}{c|}{$p_T>$45}                                                                           \\ \hline
-			$C_{\text{Tight-ID}}(Z\to\tau\mu)$                & $1.054\pm0.011\pm0.017=0.021$           & $0.954\pm0.01\pm0.014=0.017$  & $1.126\pm0.012\pm0.016=0.02$  \\ \hline
-			$\text{SF}_{\text{Tight-ID}}$                     & $0.974\pm0.01\pm0.016=0.019$            & $0.967\pm0.01\pm0.014=0.017$  & $0.953\pm0.01\pm0.014=0.017$  \\ \hline
-			$C_{\text{Tight-ID}}(Z\to\tau e)$                 & $1.063\pm0.012\pm0.019=0.023$           & $0.987\pm0.011\pm0.017=0.02$  & $1.169\pm0.014\pm0.02=0.024$  \\ \hline
-			$\text{SF}_{\text{Tight-ID}}$                     & $0.988\pm0.012\pm0.018=0.022$           & $0.952\pm0.011\pm0.018=0.021$ & $0.953\pm0.011\pm0.016=0.02$  \\ \hline
-			\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                                        \\ \hline
-		\end{tabular}%
-	}
-\end{table}
-
-\begin{table}[H]
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			\cellcolor[HTML]{FFFFFF}\textbf{Sample (3-prong)} & \cellcolor[HTML]{FFFFFF}\textbf{Sherpa} & PoPy-RW                       & PoPy                          \\ \hline
-			$p_T$ Range (GeV)                                 & \multicolumn{3}{c|}{$p_T>$45}                                                                           \\ \hline
-			$C_{\text{Tight-ID}}(Z\to\tau\mu)$                & $0.928\pm0.019\pm0.031=0.036$           & $0.914\pm0.018\pm0.026=0.031$ & $1.072\pm0.021\pm0.03=0.037$  \\ \hline
-			$\text{SF}_{\text{Tight-ID}}$                     & $0.857\pm0.017\pm0.029=0.034$           & $0.927\pm0.018\pm0.026=0.032$ & $0.907\pm0.018\pm0.025=0.031$ \\ \hline
-			$C_{\text{Tight-ID}}(Z\to\tau e)$                 & $0.993\pm0.022\pm0.039=0.045$           & $0.875\pm0.02\pm0.029=0.035$  & $1.033\pm0.023\pm0.034=0.041$ \\ \hline
-			$\text{SF}_{\text{Tight-ID}}$                     & $0.923\pm0.02\pm0.037=0.042$            & $0.857\pm0.019\pm0.029=0.034$ & $0.841\pm0.019\pm0.028=0.034$ \\ \hline
-			\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total}                                                        \\ \hline
-		\end{tabular}%
-	}
-\end{table}
-\end{comment}
