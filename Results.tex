@@ -99,7 +99,7 @@ The total yields for all the final states, using Sherpa samples as signal, are s
  
 The first conclusion we can extract by looking at the last two columns of Table \ref{Tab7} and \ref{Tab7} is that the double ratio method makes this measurement safe from any Z-$\pt$ miss-modelling concern. The fact that C-Factors for PoPy-RW and PoPy samples differ by 25$\%$, but the SFs are consistent between the two MC configurations confirms our hypothesis. When comparing the muon and electron final states for 1-prongs, we see that the PoPy results agree between uncertainties and for Sherpa the agreement is at the 1.7 sigma level. For 3-prongs the situation is reverted, the Sherpa estimate agrees between uncertainties and the PoPy result has a 1.6 sigma deviation.
 
-Given that we do not see big deviations between MC generators, the results for the SFs are combined between the muon and electron final states. In this combination we assume a $\%$100 correlation regarding the systematic uncertainties. The results from the combination are given in Table \ref{Tab9}.
+Given that we do not see big deviations between MC generators, the results for the SFs are combined between the muon and electron final states. In this combination we assume a $\%$100 correlation between the systematic uncertainties. The results from the combination are given in Table \ref{Tab9}.
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|cccc|}
@@ -118,5 +118,17 @@ Given that we do not see big deviations between MC generators, the results for t
 	}
 \end{table} 
 
-
+Finally, to asses the agreement between the two different MC generators we followed the following procedure to compare our results. First, a ratio between Sherpa and PoPy samples was taken separately for electrons and muons, the uncertainty used for this ratio was the one we called uncorrelated. This means the contribution from the signal MC samples. After this step, the muon and electron ratios are subtracted taking into account the uncertainties not uncorrelated between the two final states. The results of this procedure can be seen in Table \ref{Tab10}.
+\begin{table}[]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		& $\frac{\text{Sherpa}}{\text{PoPy-RW}}(e-\mu)$ & Uncertainty \\ \hline
+		1-Prong & 0.044                                         & 0.039       \\ \hline
+		3-Prong & 0.147                                         & 0.074       \\ \hline
+	\end{tabular}
+	\caption{Sherpa and PoPy comparison.}
+	\label{Tab10}
+\end{table}		  
+For 1-prong taus the two MC generators agree between uncertainties (1.1 sigma). In the 3-prong case, the agreement is at the 1.9 sigma level. We do not see strong evidence to claim different SFs for each generator.
 
