@@ -17,11 +17,16 @@ Fig. \ref{Fig11}, shows the Z$\pt$ distribution for our final selected events. L
 	\centering
 	\subfloat[]{\label{Fig11a}{\includegraphics[width=0.50\textwidth]{figures/Fig11a}}}\hfill
 	\subfloat[]{\label{Fig11b}{\includegraphics[width=0.50\textwidth]{figures/Fig11b}}}
-	\caption{Z$\pt$ distributions for $Z\to\tauhad\mu$ events. $\Sherpa$ prediction (a) is much closer to the data. Meanwhile, $\POWPY[8]$ tends to underestimate the data increasingly as the Z$\pt$ becomes higher. }
+	\caption{Z$\pt$ distributions for $Z\to\tauhad\mu$ events. $\Sherpa$ prediction (a) is much closer to the data. Meanwhile, (b) $\POWPY[8]$ tends to underestimate the data increasingly as the Z$\pt$ becomes higher. }
 	\label{Fig11}
 \end{figure}
 \subsection{Scale Factors}
-The total yields for all the final states, using Sherpa samples as signal, are shown in Table \ref{Tab6}. With these figures, we calculate the C factors and the SFs reported in the second column of Table \ref{Tab7} and \ref{Tab8}. The SFs obtained for the other MC generator configurations are in the two remaining columns.
+The total yields for all the final states, using Sherpa samples as signal, are shown in Table \ref{Tab6}. With these figures, we calculate the C factors and the SFs reported in the second column of Table \ref{Tab7} and \ref{Tab8}. The SFs obtained for the other MC generator configurations are in the two remaining columns. The values are reported as,
+\begin{equation}
+	\text{Central value}\pm\text{Uncorrelated Uncertainty}\pm\text{Correlated Uncertainty}=\text{Total}.
+	\label{equncer}
+\end{equation}
+All the uncertainties reported in the tables are statistical uncertainties. They are split into two categories. First, uncorrelated uncertainties. These come from the MC statistical uncertainty on the signal sample for each process and the MJBG contribution, since the last one is calculated taking into account the prediction for the signal in a control region. The correlated uncertainty is given that name since it is coming from the data statistical uncertainties and the EWBG component. Those ones are common to any of the SFs quoted on Tables \ref{Tab6} and \ref{Tab7} for the same final states. This is the reason they should not be included when comparing different MC generators (different columns). Finally, the total statistical uncertainty is calculated adding both correlated and uncorrelated components in quadrature. This value is the one that should be used to compare between different final states.
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|
@@ -33,7 +38,7 @@ The total yields for all the final states, using Sherpa samples as signal, are s
 				>{\columncolor[HTML]{FFFFFF}}c 
 				>{\columncolor[HTML]{FFFFFF}}c |}
 			\hline
-			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Final State}}  & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad\mu$}}                                                              & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad\mu$}}                                                              & \cellcolor[HTML]{FFFFFF}                                     \\ \cline{1-3} \cline{5-6}
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Final State}}  & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad\mu$}}                                                              & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{2}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\tauhad e$}}                                                              & \cellcolor[HTML]{FFFFFF}                                     \\ \cline{1-3} \cline{5-6}
 			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Sample}}       & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{1-Prong}}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{3-Prong}}    & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to\mu\mu$}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{1-Prong}}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{3-Prong}}    & \multirow{-2}{*}{\cellcolor[HTML]{FFFFFF}\textbf{$Z\to ee$}} \\ \hline
 			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{True Signal}}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$6083.19\pm61.147$}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1587.927\pm32.098$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$4656.503\pm58.314$} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1233.426\pm27.754$} &                                                              \\ \hline
 			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Fake Signal}}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$65.163\pm5.726$}    & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.457\pm1.151$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$7.337\pm1.598$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.473\pm0.34$}      &                                                              \\ \hline
@@ -48,12 +53,12 @@ The total yields for all the final states, using Sherpa samples as signal, are s
 			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{RQCD}}         & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.234\pm0.081$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.723\pm0.178$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}}                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$0.746\pm0.208$}     & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.26\pm0.342$}      &                                                              \\ \hline
 			\multicolumn{7}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{The uncertainty reported in this table only corresponds to the statistical component.}}                                                                                                                                                                                                                                                                                                                                                          \\ \hline
 		\end{tabular}%
-		\caption{Yields for all the samples used in the analysis with $\Sherpa$ as signal for $\Zll$ events. The total fakes row is defined by the sum of all EW backgrounds, the MJ contribution and the fakes from the signal sample.}
+		\caption{Yields for all the samples used in the analysis with $\Sherpa$ as signal for $\Zll$ events. }
 	\label{Tab6}
 }
 \end{table}
 
-\begin{table}[]
+\begin{table}[h]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|
 				>{\columncolor[HTML]{FFFFFF}}c 
@@ -72,14 +77,14 @@ The total yields for all the final states, using Sherpa samples as signal, are s
 			\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}$SF_{\text{Tight}}(Z\to\tauhad e)$}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.013\pm0.015\pm0.013=0.02$}  & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}$1.016\pm0.015\pm0.023=0.027$} & $1.011\pm0.015\pm0.023=0.027$ \\ \hline
 			\multicolumn{4}{|c|}{\cellcolor[HTML]{FFFFFF}Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total.}                                                                                                                                               \\ \hline
 		\end{tabular}%
-	 	\caption{Values obtained for the C-Factors and SFs for different generators configurations, in the case of 1-prong taus. Only the statistical uncertainty is reported. The uncorrelated uncertainties stands for the statistical fluctuations coming from the signal sample and the MJ estimation.}
+	 	\caption{Values obtained for the C-Factors and SFs for different generators configurations, in the case of 1-prong taus. Eq. \ref{equncer} shows how statistical uncertainties are reported.}
 	\label{Tab7}
 	}
 \end{table}
 
 
  
- \begin{table}[H]
+ \begin{table}[h]
  	\resizebox{\textwidth}{!}{%
  		\begin{tabular}{|cccc|}
  			\hline
@@ -92,7 +97,7 @@ The total yields for all the final states, using Sherpa samples as signal, are s
  			\multicolumn{1}{|c|}{$SF_{\text{Tight}}(Z\to\tauhad e)$}  & \multicolumn{1}{c|}{$0.901\pm0.027\pm0.024=0.036$} & \multicolumn{1}{c|}{$0.815\pm0.024\pm0.036=0.043$} & $0.81\pm0.024\pm0.036=0.043$  \\ \hline
  			\multicolumn{4}{|c|}{Statistical uncertainty is reported as Correlated $\pm$ Uncorrelated $=$ Total.}                                                                                               \\ \hline
  		\end{tabular}%
- 	\caption{Values obtained for the C and SFs for different generators configurations, in the case of 3-prong taus. Only the statistical uncertainty is reported. The uncorrelated uncertainties stands for the statistical fluctuations coming from the signal sample and the MJ estimation.}
+ 	\caption{Values obtained for the C and SFs for different generators configurations, in the case of 3-prong taus. Eq. \ref{equncer} shows how statistical uncertainties are reported.}
  	\label{Tab8}
  	}
  \end{table}
@@ -100,7 +105,7 @@ The total yields for all the final states, using Sherpa samples as signal, are s
 The first conclusion we can extract by looking at the last two columns of Table \ref{Tab7} and \ref{Tab7} is that the double ratio method makes this measurement safe from any Z-$\pt$ miss-modelling concern. The fact that C-Factors for PoPy-RW and PoPy samples differ by 25$\%$, but the SFs are consistent between the two MC configurations confirms our hypothesis. When comparing the muon and electron final states for 1-prongs, we see that the PoPy results agree between uncertainties and for Sherpa the agreement is at the 1.7 sigma level. For 3-prongs the situation is reverted, the Sherpa estimate agrees between uncertainties and the PoPy result has a 1.6 sigma deviation.
 
 Given that we do not see big deviations between MC generators, the results for the SFs are combined between the muon and electron final states. In this combination we assume a $\%$100 correlation between the systematic uncertainties. The results from the combination are given in Table \ref{Tab9}.
-\begin{table}[]
+\begin{table}[h]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|cccc|}
 			\hline
@@ -123,7 +128,7 @@ Finally, to asses the agreement between the two different MC generators we follo
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
-		& $\frac{\text{Sherpa}}{\text{PoPy-RW}}(e-\mu)$ & Standard deviations to unity  \\ \hline
+		& $\frac{\text{Sherpa}}{\text{PoPy-RW}}$ & Standard deviations to unity  \\ \hline
 		1-Prong & 0.960                                        & 2.5       \\ \hline
 		3-Prong & 0.911                                         & 3.1       \\ \hline
 	\end{tabular}

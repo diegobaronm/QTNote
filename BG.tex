@@ -1,7 +1,7 @@
-In the tau reconstruction, $\tauhad$ candidates are seeded from jets. Therefore, QCD events represent the main source of background (BG). Nonetheless, we do not have MC simulations for this processes. For this reason, we use a \textit{data driven method} to estimate multi-jet (MJ). In this section we will discuss how we derived our MJBG estimation.
+In the tau reconstruction, $\tauhad$ candidates are seeded from jets. Therefore, QCD events represent the main source of background (BG). Nonetheless, we do not have MC simulations for this processes. For this reason, we use a \textit{data driven method} to estimate multi-jet (MJ). In this section we will discuss how we derived our Multi-Jet Background (MJBG) estimation.
 
 \subsection{Multi-Jet Background}
-To obtain the multi-jet background (MJBG), a variable that in principle is supposed to be uncorrelated with the shape of the MJBG is chosen. For our study, this variable is the relative sign between the charges of the $\tauhad$ and the lepton. This defines two regions: the same sign (SS) region where $q(\tauhad)=q(l)$ and the opposite sign region where $q(\tauhad)=-q(l)$. Our estimate for the MJBG in the SS region is obtained by subtracting signal and electroweak backgrounds (EWBG) contributions:
+To obtain the MJBG, a variable that in principle is supposed to be uncorrelated with the shape of the MJBG is chosen. For our study, this variable is the relative sign between the charges of the $\tauhad$ and the lepton. This defines two regions: the same sign (SS) region where $q(\tauhad)=q(l)$ and the opposite sign region where $q(\tauhad)=-q(l)$. Our estimate for the MJBG in the SS region is obtained by subtracting signal and electroweak backgrounds (EWBG) contributions:
 \begin{equation}
 \text{MJBG}_{\text{SS}}=\text{Data}_{\text{SS}}-\text{Signal}_{\text{SS}}-\text{EWBG}_{\text{SS}},
 \label{eq19}
@@ -30,14 +30,14 @@ Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background i
 			\rowcolor[HTML]{C0C0C0} 
 			\textbf{Sample} & \multicolumn{2}{c}{\cellcolor[HTML]{C0C0C0}\textbf{$\mu \tauhad$}} & \multicolumn{2}{c}{\cellcolor[HTML]{C0C0C0}\textbf{$e \tauhad$}} \\
 			& 1-prong                                  & 3-prong                                 & 1-prong                                 & 3-prong                                \\ \hline
-			CR OS Data      & 476.0                                   & 270.0                                 & 62.0                                  & 39.0                                 \\
-			MC              & 28.608                                 & 10.531                                & 21.058                                &              4.794                   \\
-			CR SS Data      & 366.0                                   & 151.0                                   & 56.0                                  & 28.0                                  \\
-			MC              & 3.46                                  & 0.381                                  & 1.152                                 &                    0.843              \\ \hline
-			RQCD            & 1.234                                    & 1.723                                   & 0.746                                   & 1.260                                  \\ \hline
-			SR SS Data      & 95.0                                    & 13.0                                    & 113.0                                   & 18.0                                   \\
-			MC              & 57.257                                  & 6.761                                    & 63.585                                 & 19.240                                 \\ \hline
-			MJ Background   & 46.577                                  & 10.748                                  & 36.887                                 & 0.0                                   
+			CR OS Data      & 476.0 $\pm$ 22                                 & 270.0 $\pm$ 16                               & 62.0  $\pm$ 8                               & 39.0 $\pm$ 6                               \\
+			MC              & 28.608 $\pm$                                & 10.531 $\pm$                               & 21.058 $\pm$                               &              4.794 $\pm$                  \\
+			CR SS Data      & 366.0 $\pm$ 19                                 & 151.0 $\pm$ 12                                 & 56.0 $\pm$ 7                                & 28.0 $\pm$ 5                                \\
+			MC              & 3.46 $\pm$                                 & 0.381 $\pm$                                  & 1.152 $\pm$                                &                    0.843 $\pm$             \\ \hline
+			RQCD            & 1.234 $\pm$ 0.081                                  & 1.723 $\pm$ 0.178                                 & 0.746 $\pm$ 0.208                                  & 1.260 $\pm$ 0.342                                \\ \hline
+			SR SS Data      & 95.0 $\pm$ 10                                  & 13.0 $\pm$ 4                                  & 113.0 $\pm$ 11                                 & 18.0 $\pm$ 4                                 \\
+			MC              & 57.257 $\pm$                                 & 6.761 $\pm$                                   & 63.585 $\pm$                                & 19.240 $\pm$                                \\ \hline
+			MJ Background   & 46.577 $\pm$  13.825	                               & 10.748 $\pm$ 13.870                                & 36.887 $\pm$  15.695                              & 0.0 $\pm$ 15.695                                 
 		\end{tabular}%
 	\caption{Inputs for the calculation of the central value of the MJBG yield in the two final states, $Z\to\mu\tauhad$ and $Z\to e\tauhad$.
 		The numbers of data events in the CR OS and CR SS samples are given, together with the total numbers of events in these
@@ -54,7 +54,7 @@ Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background i
 
 \end{table}
 
-Fig. shows the jetRNN score distributions for the events in the CRs. It can be seen that the samples are dominated by non-simulated background.
+Fig. \ref{Fig12} shows the jetRNN score distributions for the events in the CRs. It can be seen that the samples are dominated by non-simulated background.
 
 \begin{figure}[htbp]
 	\centering
@@ -67,4 +67,4 @@ Fig. shows the jetRNN score distributions for the events in the CRs. It can be s
 \end{figure}
 
 \subsection{Electroweak Background}
-A priori, the main electroweak background (EWBG) contribution will come from $\Wjets$ production, where the light-lepton comes from the W decay and one jet fakes the $\tauhad$. Other sources of EWBG are $t\bar{t}$, $\Zjets$, Diboson and single top processes. For all of them, simulated samples are available and they are listed in Table \ref{Table3}. At an early stage of our analysis the $\Wjets$  simulation was checked for correctly accounting for the expected EWBG. This study is described in Appendix \ref{wjetsstudy}. Nonetheless, the final $\Wjets$ contribution to our background yield is so small that an updated study will not improve the quality and precision of our results.  
+The electroweak background (EWBG) sources considered are $t\bar{t}$, $\Zjets$, Diboson and single top processes. For all of them, simulated samples are available and they are listed in Table \ref{Table3}. At an early stage of our analysis the $\Wjets$  simulation was checked for correctly accounting for the expected EWBG. This study is described in Appendix \ref{wjetsstudy}. Nonetheless, the final $\Wjets$ contribution to our background yield is so small that an updated study will not improve the quality and precision of our results.  

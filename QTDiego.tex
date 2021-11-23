@@ -8,7 +8,7 @@
 \RequirePackage{latex/atlaslatexpath}
 % Comment out the above line if the files are in a central location, e.g. $HOME/texmf.
 %-------------------------------------------------------------------------------
-\documentclass[NOTE, atlasdraft=true, texlive=2019, UKenglish]{atlasdoc}
+\documentclass[NOTE, atlasdraft=true, texlive=2019, UKenglish, numbers=noenddot]{atlasdoc}
 % The language of the document must be set: usually UKenglish or USenglish.
 % british and american also work!
 % Commonly used options:
@@ -178,10 +178,6 @@
 % The argument gives the fraction of the text width used for the names
 %-------------------------------------------------------------------------------
 \clearpage
-The supporting notes for the analysis should also contain a list of contributors.
-This information should usually be included in \texttt{mydocument-metadata.tex}.
-The list should be printed either here or before the Table of Contents.
-\PrintAtlasContribute{0.30}
 
 
 %-------------------------------------------------------------------------------
@@ -190,10 +186,6 @@ The list should be printed either here or before the Table of Contents.
 \part*{Appendices}
 \addcontentsline{toc}{part}{Appendices}
 %-------------------------------------------------------------------------------
-
-In an ATLAS note, use the appendices to include all the technical details of your work
-that are relevant for the ATLAS Collaboration only (e.g.\ dataset details, software release used).
-This information should be printed after the Bibliography.
 
 \input{Appendix.tex}
 
