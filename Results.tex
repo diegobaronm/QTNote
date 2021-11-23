@@ -118,17 +118,17 @@ Given that we do not see big deviations between MC generators, the results for t
 	}
 \end{table} 
 
-Finally, to asses the agreement between the two different MC generators we followed the following procedure to compare our results. First, a ratio between Sherpa and PoPy samples was taken separately for electrons and muons, the uncertainty used for this ratio was the one we called uncorrelated. This means the contribution from the signal MC samples. After this step, the muon and electron ratios are subtracted taking into account the uncertainties not uncorrelated between the two final states. The results of this procedure can be seen in Table \ref{Tab10}.
+Finally, to asses the agreement between the two different MC generators we followed the next procedure. First, we performed a ratio of the yields between Sherpa and PoPy-RW signal samples. This was done separately for electrons and muons, the uncertainty used for this ratio is just the MC statistical component. After this step, we checked if a combination was possible and we found that the ratios agree between uncertainties. Consequently, we combine the ratios using a weighted average. The results are then compared with the expected unity and the deviation from it is reported in units of standard deviations in Table \ref{Tab10}.
 \begin{table}[]
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline
-		& $\frac{\text{Sherpa}}{\text{PoPy-RW}}(e-\mu)$ & Uncertainty \\ \hline
-		1-Prong & 0.044                                         & 0.039       \\ \hline
-		3-Prong & 0.147                                         & 0.074       \\ \hline
+		& $\frac{\text{Sherpa}}{\text{PoPy-RW}}(e-\mu)$ & Standard deviations to unity  \\ \hline
+		1-Prong & 0.960                                        & 2.5       \\ \hline
+		3-Prong & 0.911                                         & 3.1       \\ \hline
 	\end{tabular}
 	\caption{Sherpa and PoPy comparison.}
 	\label{Tab10}
 \end{table}		  
-For 1-prong taus the two MC generators agree between uncertainties (1.1 sigma). In the 3-prong case, the agreement is at the 1.9 sigma level. We do not see strong evidence to claim different SFs for each generator.
+For 1-prong taus the yields from the two MC generators do not agree (2.5 sigma from 1.0). In the 3-prong case, the disagreement is worse, at the 3.1 sigma level. We see evidence to claim different SFs for each generator.
 
