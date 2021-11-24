@@ -31,12 +31,12 @@ Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background i
 			\textbf{Sample} & \multicolumn{2}{c}{\cellcolor[HTML]{C0C0C0}\textbf{$\mu \tauhad$}} & \multicolumn{2}{c}{\cellcolor[HTML]{C0C0C0}\textbf{$e \tauhad$}} \\
 			& 1-prong                                  & 3-prong                                 & 1-prong                                 & 3-prong                                \\ \hline
 			CR OS Data      & 476.0 $\pm$ 22                                 & 270.0 $\pm$ 16                               & 62.0  $\pm$ 8                               & 39.0 $\pm$ 6                               \\
-			MC              & 28.608 $\pm$                                & 10.531 $\pm$                               & 21.058 $\pm$                               &              4.794 $\pm$                  \\
+			MC              & 28.608 $\pm$ 4.068                               & 10.531 $\pm$ 1.833                              & 21.058 $\pm$ 10.808                              &              4.794 $\pm$ 1.558                 \\
 			CR SS Data      & 366.0 $\pm$ 19                                 & 151.0 $\pm$ 12                                 & 56.0 $\pm$ 7                                & 28.0 $\pm$ 5                                \\
-			MC              & 3.46 $\pm$                                 & 0.381 $\pm$                                  & 1.152 $\pm$                                &                    0.843 $\pm$             \\ \hline
+			MC              & 3.46 $\pm$  0.740                               & 0.381 $\pm$ 0.229                                 & 1.152 $\pm$ 0.458 0.444                               &                    0.843 $\pm$             \\ \hline
 			RQCD            & 1.234 $\pm$ 0.081                                  & 1.723 $\pm$ 0.178                                 & 0.746 $\pm$ 0.208                                  & 1.260 $\pm$ 0.342                                \\ \hline
 			SR SS Data      & 95.0 $\pm$ 10                                  & 13.0 $\pm$ 4                                  & 113.0 $\pm$ 11                                 & 18.0 $\pm$ 4                                 \\
-			MC              & 57.257 $\pm$                                 & 6.761 $\pm$                                   & 63.585 $\pm$                                & 19.240 $\pm$                                \\ \hline
+			MC              & 57.257 $\pm$ 4.799                                & 6.761 $\pm$ 2.363                                  & 63.585 $\pm$ 4.793                               & 19.240 $\pm$ 2.651                               \\ \hline
 			MJ Background   & 46.577 $\pm$  13.825	                               & 10.748 $\pm$ 13.870                                & 36.887 $\pm$  15.695                              & 0.0 $\pm$ 15.695                                 
 		\end{tabular}%
 	\caption{Inputs for the calculation of the central value of the MJBG yield in the two final states, $Z\to\mu\tauhad$ and $Z\to e\tauhad$.
@@ -54,7 +54,14 @@ Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background i
 
 \end{table}
 
-Fig. \ref{Fig12} shows the jetRNN score distributions for the events in the CRs. It can be seen that the samples are dominated by non-simulated background.
+Fig. \ref{Fig12} shows the jetRNN score distributions for the events in the CRs. It can be seen that the samples are dominated by non-simulated background. Fig. shows the jetRNN distribution in the SRSS for the $Z\to\tauhad\mu$ final state.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/Fig21}
+	\caption{jetRNNScore distribution for 1-prong taus in the SRSS. The data to MC difference gives the shape for the MJBG contribution. After that, the shape is scaled by RQCD to obtain the MJ in the SROS.}
+	\label{Fig21}
+\end{figure}
 
 \begin{figure}[htbp]
 	\centering
