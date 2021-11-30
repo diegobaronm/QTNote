@@ -1,4 +1,4 @@
-Due to the fact that our SFs are defined as a double ratio, we expect some of the systematic uncertainties to cancel at least at first order. Therefore, luminosity, light-lepton and physics modelling uncertainties are expected to be reduced. Unfortunately, tau calibration and MJ background estimation uncertainties do not cancel in the double ratio method. Therefore, we expect them to dominate the measurement precision.
+Due to the fact that the SFs are defined as a double ratio, we expect some of the systematic uncertainties to cancel at least at first order. Therefore, luminosity, light-lepton and physics modelling uncertainties are expected to be reduced. Unfortunately, tau calibration and MJ background estimation uncertainties do not cancel in the double ratio method. Therefore, they are expected to dominate the measurement precision.
 
 First, as discussed at the end of section \ref{sec3.3.2}, different kinematic regions for $\Zll$ were tested to see the impact on the final results. The differences in the C-Factor obtained from these configurations are shown in Fig. \ref{Fig15}. The conclusion is that for big differences in the ZpT distributions, the C-Factor changes in the worst case by 0.6$\%$. This is why we have decided to take a conservative approach and assign a 0.5$\%$ uncertainty to this effect.
 
@@ -6,13 +6,17 @@ First, as discussed at the end of section \ref{sec3.3.2}, different kinematic re
 	\centering
 	\subfloat[]{\label{Fig15a}{\includegraphics[width=0.50\textwidth]{figures/Fig15a.pdf}}}
 	\subfloat[]{\label{Fig15b}{\includegraphics[width=0.50\textwidth]{figures/Fig15b.pdf}}}
-	\caption{ (a) C-Factor values for the $\Zll$ final states using Sherpa for the signal samples. From left to right; -20,-10,Standard and +10 GeV configurations for the last lepton $\pt cut$. (b) shows the same values using PoPy for the signal sample. The error bars represent a 0.3 percent uncertainty. }
+	\caption{ (a) C-Factor values for the $\Zll$ final states using Sherpa for the signal samples. From left to right; -20,-10,Standard and +10 GeV configurations for the last lepton $\pt$ cut. (b) shows the same values using PoPy for the signal sample. The error bars represent a 0.3 percent uncertainty. }
 	\label{Fig15}
 \end{figure}
 
-After calculating the integrated luminosity uncertainty for the SFs, we find that it is less than $0.07\%$, so we just ignore it in our final results. For our uncertainties calculation we use the standard ATLAS procedure. In this method, the objects are re-calibrated using parameters one sigma away from the central value. The results are then compared between the nominal and the re-calibrated events and the difference is quoted as the uncertainty. 
+After calculating the integrated luminosity uncertainty for the SFs, we find that it is less than $0.07\%$, so we just neglect it in the final results. 
 
-In this chapter the systematic uncertainties for the $Z\to\tauhad\mu$ final state are presented. First for 1-prongs, the uncertainties per source on the C-Factor($Z\to\tauhad \mu$) are shown in Fig. \ref{Fig16a}. For the C-Factor($Z\to\mu\mu$) the same results are shown in Fig. \ref{Fig16b}. After taking the ratio between these two quantities, the uncertainties obtained for the SF are shown in Fig. \ref{Fig16c}. As it can bee seen from the first comparing the first rows of Fig. \ref{Fig16a} and Fig. \ref{Fig16c} the double ratio method helps to reduce the uncertainties coming from the experimental scale factors. Overall, the main uncertainty sources are coming from the jet, MET and tau contributions. The first two directly affect the MET calculation, which in turn has an impact in the estimation of the Z boson mass and the omega variable. The cuts in these variables were re-tuned to mitigate the migration of events out of our selection. For the tau energy scale variations, the problem is that when the $\pT$ of the taus is re-calibrated events can get in our out of the selection. The sensitivity to this effect is correlated with the shape of the $\pT(\tau)$ spectrum. To mitigate this effect a harder cut in $\Delta\phi(\tauhad ,l=\mu , e)$ was put in place. This makes the $\pT(\tau)$ spectrum less rapidly falling. A comparison of the $\pT(\tau)$ shape between two different values for $\Delta\phi(\tauhad ,\mu)$ is shown in Fig. \ref{Fig18}.    
+For the uncertainties calculation we use the standard ATLAS procedure. In this method, the objects are re-calibrated using parameters one sigma away from the central value. The results are then compared between the nominal and the re-calibrated events and the difference is quoted as the uncertainty. 
+
+In this chapter the systematic uncertainties for the $Z\to\tauhad\mu$ final state are presented in detail. The uncertainties for $Z\to\tauhad e$ show very similar patterns. They are detailed in A. \ref{zteuncer}. 
+
+First for 1-prongs, the uncertainties per source on the C-Factor($Z\to\tauhad \mu$) are shown in Fig. \ref{Fig16a}. For the C-Factor($Z\to\mu\mu$) the same results are shown in Fig. \ref{Fig16b}. After taking the ratio between these two quantities, the uncertainties obtained for the SF are shown in Fig. \ref{Fig16c}. As it can be seen by comparing the first rows of Fig. \ref{Fig16a} and Fig. \ref{Fig16c} the double ratio method helps to reduce the uncertainties coming from the experimental scale factors. Overall, the main uncertainty sources are coming from the jet, MET and tau contributions. The first two directly affect the MET calculation, which in turn has an impact in the estimation of the Z boson mass and the omega variable. The cuts in these variables were re-tuned to mitigate the migration of events out of our selection. For the tau energy scale variations, the problem is that when the $\pT$ of the taus is re-calibrated events can move in our out of the selection. The sensitivity to this effect is correlated with the shape of the $\pT(\tau)$ spectrum. To mitigate this effect a harder cut in $\Delta\phi(\tauhad ,l=\mu , e)$ was put in place. This makes the $\pT(\tau)$ spectrum less rapidly falling. A comparison of the $\pT(\tau)$ shape between two different values for $\Delta\phi(\tauhad ,\mu)$ is shown in Fig. \ref{Fig18}.    
 
 \begin{figure}[htbp]
 	\centering
@@ -23,7 +27,7 @@ In this chapter the systematic uncertainties for the $Z\to\tauhad\mu$ final stat
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Fig16b.png}
-	\caption{Percentage uncertainties for the C-Factor($Z\to\mu\mu$). 1-prong taus.}
+	\caption{Percentage uncertainties for the C-Factor($Z\to\mu\mu$).}
 	\label{Fig16b}
 \end{figure}
 \begin{figure}[htbp]
@@ -37,7 +41,7 @@ In this chapter the systematic uncertainties for the $Z\to\tauhad\mu$ final stat
 	\centering
 	\subfloat[]{\label{Fig18a}{\includegraphics[width=0.50\textwidth]{figures/Fig18a.pdf}}}
 	\subfloat[]{\label{Fig18b}{\includegraphics[width=0.50\textwidth]{figures/Fig18b.pdf}}}
-	\caption{Figure (a) and (b) show the  $\pT(\tau)$ spectrum for  $\Delta\phi(\tauhad ,\mu)$ less than 2.1 rad and 1.0 rad respectively. When the harder cut is applied the final $\pT(\tau)$ spectrum falls slower.}
+	\caption{Figure (a) and (b) show the  $\pT(\tau)$ spectrum for  $\Delta\phi(\tauhad ,\mu)$ less than 2.1 rad and 1.0 rad respectively. When the harder cut is applied the final $\pT(\tau)$ spectrum falls more slowly.}
 	\label{Fig18}
 \end{figure}
 
@@ -56,9 +60,9 @@ For the 3-prongs case the same results are shown in Fig. \ref{Fig17a} and Fig. \
 	\label{Fig17b}
 \end{figure}
 
-Appendix \ref{zteuncer} contains the results for $Z\to\tauhad e$ final state. The conclusions are similar in this case.
+A. \ref{zteuncer} contains the results for $Z\to\tauhad e$ final state. The conclusions are similar in this case.
 
-Finally, the uncertainties are symmetrized and added in quadrature. The results are summarized in Table. \ref{totalsys} .
+Finally, the uncertainties are symmetrized and added in quadrature. The results are summarized in Table \ref{totalsys} .
 \begin{table}[]
 	\centering
 	\begin{tabular}{|lll|}

@@ -1,12 +1,12 @@
-In the tau reconstruction, $\tauhad$ candidates are seeded from jets. Therefore, QCD events represent the main source of background (BG). Nonetheless, we do not have MC simulations for this processes. For this reason, we use a \textit{data driven method} to estimate multi-jet (MJ). In this section we will discuss how we derived our Multi-Jet Background (MJBG) estimation.
+In the tau reconstruction, $\tauhad$ candidates are seeded from jets. Therefore, QCD events are the main source of background (BG). Nonetheless, we do not use MC simulations for these processes. Therefore, we use a \textit{data driven method} to estimate multi-jet (MJ) background. In this section we will discuss how we derived our Multi-Jet Background (MJBG) estimation.
 
 \subsection{Multi-Jet Background}
-To obtain the MJBG, a variable that in principle is supposed to be uncorrelated with the shape of the MJBG is chosen. For our study, this variable is the relative sign between the charges of the $\tauhad$ and the lepton. This defines two regions: the same sign (SS) region where $q(\tauhad)=q(l)$ and the opposite sign region where $q(\tauhad)=-q(l)$. Our estimate for the MJBG in the SS region is obtained by subtracting signal and electroweak backgrounds (EWBG) contributions:
+To obtain the MJBG, a variable that in principle is supposed to be uncorrelated with the shape of the MJBG is chosen. For this study, this variable is the relative sign between the charges of the $\tauhad$ and the lepton. This defines two regions: the same sign (SS) region where $q(\tauhad)=q(l)$ and the opposite sign region where $q(\tauhad)=-q(l)$. Our estimate for the MJBG in the SS region is obtained by subtracting the signal and electroweak backgrounds (EWBG) contributions:
 \begin{equation}
 \text{MJBG}_{\text{SS}}=\text{Data}_{\text{SS}}-\text{Signal}_{\text{SS}}-\text{EWBG}_{\text{SS}},
 \label{eq19}
 \end{equation}
-To study the residual charge correlation, we define a control region (CR) where the MJ background is enhanced. The estimate for the MJBG in these regions is given by eq. \ref{eq19} as well. The region described in Sec.\ref{sec3.3}, which contains all our final selected events is called the signal region (SR). In contrast to the SR, the CR is defined by events that fail the lepton isolation criteria and that fail the Tight-ID working point criterion for the $\tauhad$ candidate. In this region, tau candidates are required to have a looser tau-$pt$ of 25 GeV or more. This last choice was made to increase the number of candidates in the CR. The other kinematic features of the SR are maintained. A diagram showing the four regions just defined is shown in Fig.\ref{Fig7}. Now, if we assume that charge correlation is the same in the SR and CR, we have:
+To study the residual charge correlation, a control region (CR) for the MJBG is defined. The estimate for the MJBG in these regions is given by eq. \ref{eq19} as well. The region described in Sec.\ref{sec3.3}, which contains all our final selected events is called the signal region (SR). In contrast to the SR, the CR is defined by events that fail the lepton isolation criteria and that fail the Tight-ID working point criterion for the $\tauhad$ candidate. In this region, tau candidates are required to have a looser tau-$pt$ of 25 GeV or more. This last choice was made to increase the number of candidates in the CR. The other kinematic features of the SR are maintained. A diagram showing the four regions just defined is shown in Fig.\ref{Fig7}. Now, if we assume that charge correlation is the same in the SR and CR, we have:
  \begin{equation}
  \frac{\text{MJBG}_{\text{SR OS}}}{\text{MJBG}_{\text{SR SS}}}=\frac{\text{MJBG}_{\text{CR OS}}}{\text{MJBG}_{\text{CR SS}}},
  \end{equation}
@@ -15,11 +15,11 @@ then,
 \text{MJBG}_{\text{SR OS}}=\text{MJBG}_{\text{SR SS}}\times \text{RQCD}\,
 \label{eq36}
 \end{equation}
-where $\text{RQCD}\equiv\frac{\text{MJBG}_{\text{CR OS}}}{\text{MJBG}_{\text{CR SS}}}$. So, \eqref{eq36} gives the estimation of MJBG on the SROS.
+where $\text{RQCD}\equiv\frac{\text{MJBG}_{\text{CR OS}}}{\text{MJBG}_{\text{CR SS}}}$. So, eq. \eqref{eq36} gives the estimation of MJBG on the SROS.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/Fig7.png}
-	\caption{Regions defined to estimate MJ background contribution in the SROS region. This data-driven method is also known as the ABCD method.}
+	\caption{Regions defined to estimate the MJBG contribution in the SROS region. This data-driven method is also known as the ABCD method.}
 	\label{Fig7}
 \end{figure}
 Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background in the three candidate event samples. 
@@ -40,8 +40,7 @@ Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background i
 			MJ Background   & 46.577 $\pm$  13.825	                               & 10.748 $\pm$ 13.870                                & 36.887 $\pm$  15.695                              & 0.0 $\pm$ 15.695                                 
 		\end{tabular}%
 	\caption{Inputs for the calculation of the central value of the MJBG yield in the two final states, $Z\to\mu\tauhad$ and $Z\to e\tauhad$.
-		The numbers of data events in the CR OS and CR SS samples are given, together with the total numbers of events in these
-		categories expected from simulation.
+		The number of data and MC events in the CR OS and CR SS samples are given.
 		The excess of data with respect to simulation is assumed to arise from MJBG and it is used to calculate the value of RQCD.
 	}
 
@@ -54,7 +53,7 @@ Table \ref{tab:MJ} summarises inputs into the calculation of the MJ background i
 
 \end{table}
 
-Fig. \ref{Fig12} shows the jetRNN score distributions for the events in the CRs. It can be seen that the samples are dominated by non-simulated background. Fig. shows the jetRNN distribution in the SRSS for the $Z\to\tauhad\mu$ final state.
+Fig.\ref{Fig21} shows the jetRNN score distribution in the SRSS for the $Z\to\tauhad\mu$ final state. Fig. \ref{Fig12} shows the jetRNN score distributions for the events in the CRs. It can be seen that the samples are dominated by non-simulated background.
 
 \begin{figure}[htbp]
 	\centering
