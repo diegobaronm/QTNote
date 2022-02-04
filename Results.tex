@@ -92,7 +92,7 @@ All the uncertainties reported in the tables are statistical uncertainties. They
  
 The first conclusion we can extract by looking at the last two columns of Table \ref{Tab7} and \ref{Tab8} is that the double ratio method makes this measurement safe from any Z-$\pt$ miss-modelling concern. The fact that the C-Factors for PoPy-RW and PoPy samples differ by 25$\%$, but the SFs are consistent between the two MC configurations confirms this hypothesis. When comparing the muon and electron final states for 1 prongs, we see that the PoPy results agree better between uncertainties than Sherpa. For 3-prongs the situation is reverted.
 
-Since there are not big deviations between MC generators, the results for the SFs are combined between the muon and electron final states. In this combination we assume a 100$\%$ correlation between the systematic uncertainties. The results from the combination are given in Table \ref{Tab9}.
+Since there are not more than two sigma deviations between the electron and muon numbers, the results for the SFs are combined between these final states. In this combination we assume a 100$\%$ correlation between the systematic uncertainties. The results from the combination are given in Table \ref{Tab9}. At this stage, the results can not be compared between different MC configurations. The reason is that the uncertainties quoted include the shared data and background modelling contributions.
 \begin{table}[h]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|cccc|}
@@ -106,34 +106,49 @@ Since there are not big deviations between MC generators, the results for the SF
 	\label{Tab9}
 	}
 \end{table} 
-FROM HERE EVERYTHING HAS TO BE ADAPTED TO THE FINAL RESULTS WE WANT TO CLAIM ABOUT POPY TO SHERPA COMPARISON... THE RATIO TABLES ARE IN THE FIRST APPENDIX \ref{ratio_table}.
 
-Finally, to asses the agreement between the two different MC generators we followed the next procedure. First, we performed a ratio of the yields between Sherpa and PoPy-RW signal samples. This was done separately for electrons and muons, the uncertainty used for this ratio is just the signal MC statistical component. These values can be seen in Table \ref{Tab10}. Since the ratios agree between uncertainties, they are combined using a weighted average. The results are then compared with the expected unity and the deviation from it is reported in units of standard deviations. This values are shown in Table \ref{Tab11}.
+Finally, to asses the agreement between the two different MC generators we followed this procedure. First, we performed the ratio,
+\begin{equation}
+R=\frac{\Zll}{Z\to\tau l},
+\end{equation}
+for the MC signal yields for electrons and muons separately. This ratio should be free of MC ZpT modelling problems. Next, since there are not big deviations between the electron and muon results, we combine them. Finally,  PowHeg+Pythia and Sherpa predictions are compared. This numbers can be seen in Table \ref{Tab10} for 1-prong taus.
+
 \begin{table}[]
 	\centering
-	\begin{tabular}{|c|llc|}
-		\hline
-		1-Prong                       & \multicolumn{1}{l|}{Sherpa}                & \multicolumn{1}{l|}{PoPy-RW}                & $\frac{\text{Sherpa}}{\text{PoPy-RW}}$ \\ \hline
-		Muons                         & \multicolumn{1}{l|}{$6083.190 \pm 61.147$} & \multicolumn{1}{l|}{$6345.904 \pm 120.425$} & $0.959 \pm 0.021$                             \\ \hline
-		Electrons                     & \multicolumn{1}{l|}{$4656.503 \pm 58.314$} & \multicolumn{1}{l|}{$4840.890 \pm 106.985$} & $0.962 \pm 0.024$                             \\ \hline
-		\multicolumn{1}{|l|}{3-Prong} & \multicolumn{3}{l|}{}                                                                                                                    \\ \hline
-		Muons                         & \multicolumn{1}{l|}{$1587.927 \pm 32.098$} & \multicolumn{1}{l|}{$1670.433 \pm 61.236$}  & $0.951 \pm 0.04$                              \\ \hline
-		Electrons                     & \multicolumn{1}{l|}{$1233.426 \pm 27.754$} & \multicolumn{1}{l|}{$1419.201 \pm 58.094$}  & $0.869 \pm 0.041$                             \\ \hline
-	\end{tabular}
-	\caption{Ratio between the signal yields for Sherpa and PoPy-RW.}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{ccc}
+			\hline
+			\multicolumn{1}{|c|}{1-Prong}     & \multicolumn{1}{c|}{Sherpa}          & \multicolumn{1}{c|}{PoPy}            \\ \hline
+			$Z\to\tau\mu$                     & $5658.798\pm59.146$                  & $5923.081\pm116.502$                 \\
+			$Z\to\mu\mu$                      & $187038.582\pm350.582$               & $203649.011\pm258.455$               \\
+			R                                 & $33.05\pm0.35$                       & $34.38\pm0.68$                       \\ \hline
+			$Z\to\tau e$                      & $4656.503\pm58.314$                  & $4840.89\pm106.985$                  \\
+			$Z\to ee$                         & $155746.726\pm294.846$               & $162477.447\pm219.923$               \\
+			R                                 & $33.45\pm0.42$                       & $33.56\pm0.74$                       \\ \hline
+			\multicolumn{1}{|c|}{Combination} & \multicolumn{1}{c|}{$33.21\pm 0.27$} & \multicolumn{1}{c|}{$34.04\pm 0.50$} \\ \hline
+		\end{tabular}%
+	}
+	\caption{MC signal yield comparisons. 1-prong taus.}
 	\label{Tab10}
 \end{table}
 
+They deviate at the 1.4 sigma level. There is not a strong hint to think of using MC to MC SFs for high-$\pt$ taus. 
+
+For 3-prongs, the same calculation is performed and the results are shown in Table \ref{Tab11}.
 \begin{table}[]
 	\centering
-	\begin{tabular}{|c|c|c|}
-		\hline
-		& $\frac{\text{Sherpa}}{\text{PoPy-RW}}$ & Standard deviations to unity  \\ \hline
-		1-Prong & $0.960 \pm 0.016$                                        & 2.5       \\ \hline
-		3-Prong & $0.911  \pm 0.028$                                       & 3.1       \\ \hline
-	\end{tabular}
-	\caption{Sherpa and PoPy comparison.}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{ccc}
+			\hline
+			\multicolumn{1}{|c|}{3-Prong}     & \multicolumn{1}{c|}{Sherpa}          & \multicolumn{1}{c|}{PoPy} \\ \hline
+			$Z\to\tau\mu$                     & $1463.938\pm30.753$                  & $1538.399\pm58.932$       \\
+			R                                 & $127.76\pm2.70$                      & $132.38\pm5.07$           \\ \hline
+			$Z\to\tau e$                      & $1233.426\pm27.754$                  & $1419.201\pm58.094$       \\
+			R                                 & $126.27\pm2.85$                      & $114.49\pm4.69$           \\ \hline
+			\multicolumn{1}{|c|}{Combination} & \multicolumn{1}{c|}{$127.06\pm1.96$} & \multicolumn{1}{c|}{N/A}  \\ \hline
+		\end{tabular}%
+	}
+	\caption{MC signal yield comparisons. 3-prong taus.}
 	\label{Tab11}
-\end{table}		  
-For 1-prong taus the yields from the two MC generators do not agree (2.5 sigma from 1.0). In the 3-prong case, the disagreement is worse, at the 3.1 sigma level. We see evidence to claim different SFs for each generator.
-
+\end{table}
+For these tau decays the Sherpa predictions agree between muons and electrons. They also agree with the Sherpa results for the muon final state. However, there is a 2.5 sigma tension with the electron final state.
